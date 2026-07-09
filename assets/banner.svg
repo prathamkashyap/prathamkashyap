@@ -1,0 +1,80 @@
+<svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Pratham Kashyap</title>
+  <desc id="desc">Engineering notebook style banner showing notes flowing into a graph, model, API, and product.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.55" stop-color="#10172A"/>
+      <stop offset="1" stop-color="#1B1237"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="154" y1="38" x2="872" y2="209" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.55" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" stroke="#38BDF8" stroke-width="0.6" opacity="0.14"/>
+    </pattern>
+    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="260" rx="0" fill="url(#bg)"/>
+  <rect width="1000" height="260" fill="url(#grid)"/>
+  <path d="M0 214C132 168 212 206 318 164C448 112 501 55 641 83C771 109 834 169 1000 121" stroke="url(#accent)" stroke-width="1.2" opacity="0.38"/>
+  <path d="M760 0C817 32 851 71 861 118C872 170 845 213 801 260H1000V0H760Z" fill="#A855F7" opacity="0.06"/>
+
+  <g opacity="0.85" stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 44H89M54 44V79" stroke-width="1.4"/>
+    <path d="M946 44H911M946 44V79" stroke-width="1.4"/>
+    <path d="M54 216H89M54 216V181" stroke-width="1.4"/>
+    <path d="M946 216H911M946 216V181" stroke-width="1.4"/>
+  </g>
+
+  <g transform="translate(60 70)">
+    <text x="0" y="27" fill="#E5F6FF" font-family="Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">PRATHAM KASHYAP</text>
+    <text x="0" y="78" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">AI systems with</text>
+    <text x="0" y="124" fill="url(#accent)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">engineering discipline</text>
+    <text x="2" y="158" fill="#B6C7D8" font-family="Menlo, Consolas, monospace" font-size="15">notebook -> graph -> model -> api -> product</text>
+  </g>
+
+  <g transform="translate(530 55)" stroke-linecap="round" stroke-linejoin="round">
+    <g filter="url(#softGlow)">
+      <path d="M64 51H24C17.4 51 12 56.4 12 63V150C12 156.6 17.4 162 24 162H84C90.6 162 96 156.6 96 150V83L64 51Z" fill="#0B1220" stroke="#38BDF8" stroke-width="1.6"/>
+      <path d="M64 51V83H96" stroke="#38BDF8" stroke-width="1.6"/>
+      <path d="M30 99H70M30 119H78M30 139H62" stroke="#38BDF8" stroke-width="1.5" opacity="0.75"/>
+    </g>
+
+    <g transform="translate(112 25)" stroke="#38BDF8" stroke-width="1.4">
+      <path d="M35 54L75 27L122 58L90 108L35 92L18 126" opacity="0.58"/>
+      <circle cx="35" cy="54" r="7" fill="#38BDF8"/>
+      <circle cx="75" cy="27" r="5" fill="#22D3EE"/>
+      <circle cx="122" cy="58" r="6" fill="#A855F7"/>
+      <circle cx="90" cy="108" r="6" fill="#38BDF8"/>
+      <circle cx="35" cy="92" r="5" fill="#A855F7"/>
+      <circle cx="18" cy="126" r="4" fill="#22D3EE"/>
+    </g>
+
+    <g transform="translate(258 58)">
+      <rect x="0" y="0" width="96" height="96" rx="18" fill="#111827" stroke="#A855F7" stroke-width="1.6"/>
+      <path d="M25 61C25 44 35 32 48 32C61 32 71 44 71 61" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M33 61C33 49 39 41 48 41C57 41 63 49 63 61" stroke="#22D3EE" stroke-width="1.6" opacity="0.8"/>
+      <circle cx="48" cy="64" r="5" fill="#A855F7"/>
+      <path d="M22 75H74" stroke="#38BDF8" stroke-width="1.5" opacity="0.55"/>
+    </g>
+
+    <g transform="translate(370 77)">
+      <rect x="0" y="0" width="96" height="58" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="24" y="36" fill="#E0F2FE" font-family="Menlo, Consolas, monospace" font-size="17" font-weight="700">API</text>
+      <circle cx="82" cy="29" r="5" fill="#A855F7"/>
+      <path d="M72 29H54" stroke="#38BDF8" stroke-width="1.5"/>
+    </g>
+
+    <path d="M98 107H122M239 107H258M354 107H370" stroke="url(#accent)" stroke-width="1.6" stroke-dasharray="5 6" opacity="0.75"/>
+  </g>
+</svg>
