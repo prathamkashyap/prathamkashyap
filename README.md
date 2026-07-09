@@ -1,15 +1,23 @@
 <div align="center">
 
-<img src="assets/banner.svg" width="100%" alt="Pratham Kashyap - AI systems, computer vision, and backend engineering" />
+<img src="assets/banner.svg" width="100%" alt="Pratham Kashyap - From Notebook to Product" />
 
 <br />
 
-<img src="assets/profile-pic.png" width="96" alt="PK monogram" />
+<table>
+<tr>
+<td align="center"><strong>5+</strong><br />featured projects</td>
+<td align="center"><strong>4</strong><br />research tracks</td>
+<td align="center"><strong>AthenaeumAI</strong><br />currently building</td>
+<td align="center"><strong>CV + APIs</strong><br />current focus</td>
+<td align="center"><strong>VIT Bhopal</strong><br />CSE AI/ML</td>
+</tr>
+</table>
 
 <br />
 
 <a href="https://github.com/prathamkashyap">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2600&pause=1000&color=38BDF8&center=true&vCenter=true&width=720&lines=Building+Intelligent+Software+Systems;Backend+Engineering+%E2%80%A2+Computer+Vision;Applied+AI+%26+Research;From+Notebook+to+API+to+Product" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=18&duration=2600&pause=1000&color=38BDF8&center=true&vCenter=true&width=720&lines=Building+Software+That+Ships;Backend+APIs+%E2%80%A2+Computer+Vision;Applied+AI+%26+Research;From+Notebook+to+Product" alt="Typing animation" />
 </a>
 
 I build complete AI systems: data pipelines, models, APIs, and interfaces that hold up outside the notebook.
@@ -18,6 +26,7 @@ I build complete AI systems: data pipelines, models, APIs, and interfaces that h
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:pkmail2005@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white)](https://github.com/prathamkashyap)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://kaggle.com/prathamkashyap17)
+[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/prathamkashyap)
 
 </div>
 
@@ -31,7 +40,7 @@ I like building systems where an idea moves from a dataset or notebook into a us
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
-## <img src="assets/icons/icon-blueprint.svg" width="22" alt="" /> Current Build Log
+## Current Build Log
 
 | Focus | What I am working on |
 | --- | --- |
@@ -82,7 +91,7 @@ I like building systems where an idea moves from a dataset or notebook into a us
 
 <table>
 <tr>
-<td width="72" valign="top"><img src="assets/icons/icon-node-graph.svg" width="52" alt="" /></td>
+<td width="72" valign="top"><br /><img src="assets/icons/icon-node-graph.svg" width="52" alt="" /></td>
 <td valign="top">
 
 ### [AthenaeumAI](https://github.com/prathamkashyap/AthenaeumAI)
@@ -101,7 +110,7 @@ Built around chunk-based document processing, semantic filtering, Groq-backed ge
 
 <table>
 <tr>
-<td width="72" valign="top"><img src="assets/icons/icon-map-grid.svg" width="52" alt="" /></td>
+<td width="72" valign="top"><br /><img src="assets/icons/icon-map-grid.svg" width="52" alt="" /></td>
 <td valign="top">
 
 ### [CiviQ - Smart Civic Issue Register & Tracker](https://github.com/prathamkashyap/CiviQ)
@@ -120,7 +129,7 @@ Combines domain-knowledge labels, KNN density features, DBSCAN hotspot detection
 
 <table>
 <tr>
-<td width="72" valign="top"><img src="assets/icons/icon-shelf-scan.svg" width="52" alt="" /></td>
+<td width="72" valign="top"><br /><img src="assets/icons/icon-shelf-scan.svg" width="52" alt="" /></td>
 <td valign="top">
 
 ### [Smart Retail Store Assistant](https://github.com/prathamkashyap/Smart-Retail-Store-Assistant)
@@ -139,7 +148,7 @@ YOLOv8 detection plus velocity-predicted centroid tracking for shelf-zone monito
 
 <table>
 <tr>
-<td width="72" valign="top"><img src="assets/icons/icon-waveform.svg" width="52" alt="" /></td>
+<td width="72" valign="top"><br /><img src="assets/icons/icon-waveform.svg" width="52" alt="" /></td>
 <td valign="top">
 
 ### [Multimodal AI Assistant](https://github.com/prathamkashyap/Multimodal-AI-Assistant)
@@ -158,7 +167,7 @@ Uses OpenCV Haar-cascade face gating, Whisper transcription, and a rule-based in
 
 <table>
 <tr>
-<td width="72" valign="top"><img src="assets/icons/icon-leaf.svg" width="52" alt="" /></td>
+<td width="72" valign="top"><br /><img src="assets/icons/icon-leaf.svg" width="52" alt="" /></td>
 <td valign="top">
 
 ### [AgriTech - Plant Disease Detection](https://github.com/prathamkashyap/AgriTech-Plant-Disease-Detection)
@@ -237,6 +246,6 @@ Combines Segment Anything Model for leaf/stem segmentation with YOLOv11 disease 
 
 <div align="center">
 
-**Where intelligent algorithms meet reliable engineering.**
+**Build things people actually use.**
 
 </div>

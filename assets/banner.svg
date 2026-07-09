@@ -1,22 +1,49 @@
 <svg width="1000" height="260" viewBox="0 0 1000 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Pratham Kashyap</title>
-  <desc id="desc">Engineering notebook style banner showing notes flowing into a graph, model, API, and product.</desc>
+  <title id="title">Pratham Kashyap - From Notebook to Product</title>
+  <desc id="desc">Animated blue and purple banner showing a notebook-to-product pipeline with a flowing wave, graph nodes, model, and API.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#08111F"/>
-      <stop offset="0.55" stop-color="#10172A"/>
-      <stop offset="1" stop-color="#1B1237"/>
+      <stop offset="0" stop-color="#07111F">
+        <animate attributeName="stop-color" values="#07111F;#0C1830;#111A3E;#07111F" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.52" stop-color="#10172A">
+        <animate attributeName="stop-color" values="#10172A;#13223D;#1A1640;#10172A" dur="12s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#241143">
+        <animate attributeName="stop-color" values="#241143;#172554;#35155B;#241143" dur="12s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
-    <linearGradient id="accent" x1="154" y1="38" x2="872" y2="209" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#38BDF8"/>
-      <stop offset="0.55" stop-color="#22D3EE"/>
+
+    <linearGradient id="accent" x1="100" y1="80" x2="900" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.42" stop-color="#22D3EE"/>
+      <stop offset="0.72" stop-color="#818CF8"/>
       <stop offset="1" stop-color="#A855F7"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-120 0;120 0;-120 0" dur="9s" repeatCount="indefinite"/>
     </linearGradient>
+
+    <linearGradient id="headline" x1="0" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="0.35" stop-color="#38BDF8"/>
+      <stop offset="0.68" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A855F7"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-80 0;80 0;-80 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
     <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M28 0H0V28" stroke="#38BDF8" stroke-width="0.6" opacity="0.14"/>
+      <path d="M28 0H0V28" stroke="#38BDF8" stroke-width="0.6" opacity="0.12"/>
     </pattern>
-    <filter id="softGlow" x="-20%" y="-30%" width="140%" height="160%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+
+    <filter id="glow" x="-30%" y="-40%" width="160%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-8%" y="-20%" width="116%" height="140%">
+      <feGaussianBlur stdDeviation="1.2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -24,10 +51,10 @@
     </filter>
   </defs>
 
-  <rect width="1000" height="260" rx="0" fill="url(#bg)"/>
+  <rect width="1000" height="260" fill="url(#bg)"/>
   <rect width="1000" height="260" fill="url(#grid)"/>
-  <path d="M0 214C132 168 212 206 318 164C448 112 501 55 641 83C771 109 834 169 1000 121" stroke="url(#accent)" stroke-width="1.2" opacity="0.38"/>
-  <path d="M760 0C817 32 851 71 861 118C872 170 845 213 801 260H1000V0H760Z" fill="#A855F7" opacity="0.06"/>
+  <path d="M748 0C810 33 850 78 862 128C875 184 849 226 815 260H1000V0H748Z" fill="#A855F7" opacity="0.07"/>
+  <path d="M0 204C128 166 220 201 330 158C454 110 520 73 650 91C775 108 846 160 1000 118" stroke="url(#accent)" stroke-width="1.2" opacity="0.28"/>
 
   <g opacity="0.85" stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round">
     <path d="M54 44H89M54 44V79" stroke-width="1.4"/>
@@ -36,45 +63,65 @@
     <path d="M946 216H911M946 216V181" stroke-width="1.4"/>
   </g>
 
-  <g transform="translate(60 70)">
-    <text x="0" y="27" fill="#E5F6FF" font-family="Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">PRATHAM KASHYAP</text>
-    <text x="0" y="78" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">AI systems with</text>
-    <text x="0" y="124" fill="url(#accent)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="800">engineering discipline</text>
-    <text x="2" y="158" fill="#B6C7D8" font-family="Menlo, Consolas, monospace" font-size="15">notebook -> graph -> model -> api -> product</text>
+  <g transform="translate(60 58)">
+    <text x="0" y="31" fill="#E5F6FF" font-family="Menlo, Consolas, monospace" font-size="18" font-weight="700" letter-spacing="2">PRATHAM KASHYAP</text>
+    <text x="0" y="88" fill="url(#headline)" filter="url(#textGlow)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="52" font-weight="850">From Notebook</text>
+    <text x="0" y="139" fill="url(#headline)" filter="url(#textGlow)" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="52" font-weight="850">to Product</text>
+    <text x="3" y="176" fill="#B6C7D8" font-family="Menlo, Consolas, monospace" font-size="15">notebook -> graph -> model -> api -> product</text>
   </g>
 
-  <g transform="translate(530 55)" stroke-linecap="round" stroke-linejoin="round">
-    <g filter="url(#softGlow)">
-      <path d="M64 51H24C17.4 51 12 56.4 12 63V150C12 156.6 17.4 162 24 162H84C90.6 162 96 156.6 96 150V83L64 51Z" fill="#0B1220" stroke="#38BDF8" stroke-width="1.6"/>
-      <path d="M64 51V83H96" stroke="#38BDF8" stroke-width="1.6"/>
-      <path d="M30 99H70M30 119H78M30 139H62" stroke="#38BDF8" stroke-width="1.5" opacity="0.75"/>
+  <g transform="translate(490 42)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 126C64 79 111 105 156 82C207 56 252 70 294 107C346 153 397 109 466 122" stroke="url(#accent)" stroke-width="3" stroke-dasharray="16 14" stroke-dashoffset="0" opacity="0.78" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-120" dur="5.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.58;0.9;0.58" dur="6s" repeatCount="indefinite"/>
+    </path>
+
+    <g filter="url(#glow)">
+      <path d="M76 48H36C29.4 48 24 53.4 24 60V147C24 153.6 29.4 159 36 159H96C102.6 159 108 153.6 108 147V80L76 48Z" fill="#0B1220" stroke="#38BDF8" stroke-width="1.6"/>
+      <path d="M76 48V80H108" stroke="#38BDF8" stroke-width="1.6"/>
+      <path d="M42 96H82M42 116H90M42 136H74" stroke="#38BDF8" stroke-width="1.5" opacity="0.75"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -2;0 0" dur="5.8s" repeatCount="indefinite"/>
     </g>
 
-    <g transform="translate(112 25)" stroke="#38BDF8" stroke-width="1.4">
-      <path d="M35 54L75 27L122 58L90 108L35 92L18 126" opacity="0.58"/>
-      <circle cx="35" cy="54" r="7" fill="#38BDF8"/>
-      <circle cx="75" cy="27" r="5" fill="#22D3EE"/>
-      <circle cx="122" cy="58" r="6" fill="#A855F7"/>
-      <circle cx="90" cy="108" r="6" fill="#38BDF8"/>
-      <circle cx="35" cy="92" r="5" fill="#A855F7"/>
-      <circle cx="18" cy="126" r="4" fill="#22D3EE"/>
+    <g transform="translate(138 18)" stroke="#38BDF8" stroke-width="1.4">
+      <path d="M35 66L76 36L124 68L91 119L35 103L18 137" opacity="0.58"/>
+      <circle cx="35" cy="66" r="7" fill="#38BDF8">
+        <animate attributeName="r" values="7;9;7" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="76" cy="36" r="5" fill="#22D3EE">
+        <animate attributeName="opacity" values="0.65;1;0.65" dur="3.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="124" cy="68" r="6" fill="#A855F7">
+        <animate attributeName="r" values="6;8;6" dur="4.5s" begin="0.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="91" cy="119" r="6" fill="#38BDF8">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" begin="0.7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="35" cy="103" r="5" fill="#A855F7"/>
+      <circle cx="18" cy="137" r="4" fill="#22D3EE"/>
     </g>
 
-    <g transform="translate(258 58)">
-      <rect x="0" y="0" width="96" height="96" rx="18" fill="#111827" stroke="#A855F7" stroke-width="1.6"/>
-      <path d="M25 61C25 44 35 32 48 32C61 32 71 44 71 61" stroke="#38BDF8" stroke-width="2"/>
-      <path d="M33 61C33 49 39 41 48 41C57 41 63 49 63 61" stroke="#22D3EE" stroke-width="1.6" opacity="0.8"/>
-      <circle cx="48" cy="64" r="5" fill="#A855F7"/>
-      <path d="M22 75H74" stroke="#38BDF8" stroke-width="1.5" opacity="0.55"/>
+    <g transform="translate(282 58)">
+      <rect x="0" y="0" width="92" height="92" rx="18" fill="#111827" stroke="#A855F7" stroke-width="1.6">
+        <animate attributeName="stroke-opacity" values="0.55;1;0.55" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <path d="M24 58C24 42 33.5 31 46 31C58.5 31 68 42 68 58" stroke="#38BDF8" stroke-width="2"/>
+      <path d="M32 58C32 47 38 40 46 40C54 40 60 47 60 58" stroke="#22D3EE" stroke-width="1.6" opacity="0.8"/>
+      <circle cx="46" cy="62" r="5" fill="#A855F7">
+        <animate attributeName="r" values="5;7;5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M22 73H70" stroke="#38BDF8" stroke-width="1.5" opacity="0.55"/>
     </g>
 
-    <g transform="translate(370 77)">
-      <rect x="0" y="0" width="96" height="58" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5"/>
+    <g transform="translate(398 77)">
+      <rect x="0" y="0" width="92" height="58" rx="10" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5">
+        <animate attributeName="stroke" values="#38BDF8;#A855F7;#38BDF8" dur="6s" repeatCount="indefinite"/>
+      </rect>
       <text x="24" y="36" fill="#E0F2FE" font-family="Menlo, Consolas, monospace" font-size="17" font-weight="700">API</text>
-      <circle cx="82" cy="29" r="5" fill="#A855F7"/>
-      <path d="M72 29H54" stroke="#38BDF8" stroke-width="1.5"/>
+      <circle cx="78" cy="29" r="5" fill="#A855F7">
+        <animate attributeName="fill" values="#A855F7;#22D3EE;#A855F7" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+      <path d="M68 29H54" stroke="#38BDF8" stroke-width="1.5"/>
     </g>
-
-    <path d="M98 107H122M239 107H258M354 107H370" stroke="url(#accent)" stroke-width="1.6" stroke-dasharray="5 6" opacity="0.75"/>
   </g>
 </svg>
