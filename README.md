@@ -22,11 +22,11 @@
 
 I build complete AI systems: data pipelines, models, APIs, and interfaces that hold up outside the notebook.
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-38BDF8?style=flat-square&logo=vercel&logoColor=white)](#)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/prathamkashyap5)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:pkmail2005@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-111827?style=flat-square&logo=github&logoColor=white)](https://github.com/prathamkashyap)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://kaggle.com/prathamkashyap17)
-[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/prathamkashyap)
 
 </div>
 
@@ -240,12 +240,15 @@ Combines Segment Anything Model for leaf/stem segmentation with YOLOv11 disease 
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=111827)](https://leetcode.com/u/prathamkashyap/)
 [![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=flat-square&logo=codechef&logoColor=white)](https://codechef.com/users/prathamkashyap)
 [![HackerRank](https://img.shields.io/badge/HackerRank-2EC866?style=flat-square&logo=hackerrank&logoColor=white)](https://hackerrank.com/profile/prathamkashyap)
+[![HackerEarth](https://img.shields.io/badge/HackerEarth-2C3454?style=flat-square&logo=hackerearth&logoColor=white)](https://www.hackerearth.com/@pratham422/)
+[![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=flat-square&logo=codeforces&logoColor=white)](https://codeforces.com/profile/prathamkashyap)
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://kaggle.com/prathamkashyap17)
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
 <div align="center">
 
-**Build things people actually use.**
+**Building Software**  
+**That Matters**
 
 </div>
