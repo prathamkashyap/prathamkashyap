@@ -246,6 +246,12 @@ Combines Segment Anything Model for leaf/stem segmentation with YOLOv11 disease 
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
+## 🏅 Community & Open Source
+
+[![An image of @prathamkashyap's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/prathamkashyap)](https://holopin.io/@prathamkashyap)
+
+<img src="assets/divider.svg" width="100%" alt="" />
+
 <div align="center">
 
 **Building Software**  
