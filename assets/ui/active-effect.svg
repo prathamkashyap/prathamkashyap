@@ -1,0 +1,51 @@
+<svg width="1200" height="76" viewBox="0 0 1200 76" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Active Buff: Full Dungeon Sight">
+  <defs>
+    <linearGradient id="buffBg" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#12081C"/>
+      <stop offset="30%" stop-color="#09040F"/>
+      <stop offset="100%" stop-color="#07040C"/>
+    </linearGradient>
+    <filter id="crimsonGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="pulseRing" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF2D4A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF2D4A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Panel Base -->
+  <rect width="1200" height="76" fill="url(#buffBg)"/>
+  <rect x="0" y="0" width="5" height="76" fill="#FF2D4A"/>
+
+  <!-- Speed Accent Lines -->
+  <path d="M0 16 L36 16 M0 24 L22 24 M0 32 L30 32" stroke="#FF2D4A" stroke-width="2" opacity="0.8"/>
+
+  <!-- Left Pulse Crest -->
+  <g transform="translate(28, 26)">
+    <circle cx="12" cy="12" r="18" fill="url(#pulseRing)"/>
+    <polygon points="12,0 24,12 12,24 0,12" fill="#1B0C28" stroke="#FF2D4A" stroke-width="1.5"/>
+    <circle cx="12" cy="12" r="4" fill="#FF8E9A" filter="url(#crimsonGlow)"/>
+  </g>
+
+  <!-- Eyebrow -->
+  <text x="68" y="28" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" letter-spacing="3.5">ACTIVE BUFF // 全域洞察</text>
+
+  <!-- Title -->
+  <text x="68" y="58" fill="#F8EEE9" font-family="'Impact', 'Arial Black', sans-serif" font-size="28" font-weight="900" letter-spacing="1">FULL DUNGEON </text>
+  <text x="310" y="58" fill="#FF2D4A" font-family="'Impact', 'Arial Black', sans-serif" font-size="28" font-weight="900" letter-spacing="1">SIGHT.</text>
+
+  <!-- Subtitle -->
+  <text x="560" y="58" fill="#8E7D9E" font-family="'JetBrains Mono', monospace" font-size="11" letter-spacing="2">data ➞ model ➞ gate ➞ world</text>
+
+  <!-- Right Kanji Watermark -->
+  <text x="1170" y="52" fill="#FF2D4A" font-family="'Noto Sans JP', serif" font-size="32" font-weight="900" opacity="0.06" text-anchor="end">全visual</text>
+  <text x="1170" y="52" fill="#FF2D4A" font-family="serif" font-size="32" font-weight="900" opacity="0.06" text-anchor="end">全域洞察</text>
+
+  <!-- Corner Brackets -->
+  <path d="M4 12V4H12M1196 12V4H1188M4 64V72H12M1196 64V72H1188" stroke="#FF2D4A" stroke-width="1.5" opacity="0.6"/>
+</svg>

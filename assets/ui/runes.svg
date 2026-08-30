@@ -1,0 +1,69 @@
+<svg width="1200" height="70" viewBox="0 0 1200 70" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Equipped Runes: Python, Java, TypeScript, C++, FastAPI, DB, CV, RAG">
+  <defs>
+    <linearGradient id="runeBg" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#0E0616"/>
+      <stop offset="50%" stop-color="#180A26"/>
+      <stop offset="100%" stop-color="#0E0616"/>
+    </linearGradient>
+    <filter id="runeAura" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="70" rx="4" fill="url(#runeBg)" stroke="#2D1745" stroke-width="1.5"/>
+
+  <!-- Energy Line connecting the 8 runes -->
+  <line x1="40" y1="35" x2="1160" y2="35" stroke="#FF2D4A" stroke-width="1" opacity="0.35"/>
+
+  <!-- Rune 1: Python -->
+  <g transform="translate(60, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#FF2D4A" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#F8EEE9" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">PYTHON</text>
+  </g>
+
+  <!-- Rune 2: Java 21 -->
+  <g transform="translate(210, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#FFC857" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#FFC857" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">JAVA</text>
+  </g>
+
+  <!-- Rune 3: TypeScript -->
+  <g transform="translate(360, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#5EB3F0" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#5EB3F0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">TS</text>
+  </g>
+
+  <!-- Rune 4: C++ -->
+  <g transform="translate(510, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#A855F7" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#A855F7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">C++</text>
+  </g>
+
+  <!-- Rune 5: FastAPI -->
+  <g transform="translate(660, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#4ADE80" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="900" text-anchor="middle">FASTAPI</text>
+  </g>
+
+  <!-- Rune 6: SQL / DB -->
+  <g transform="translate(810, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#FF7A8A" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#FF7A8A" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">DB</text>
+  </g>
+
+  <!-- Rune 7: CV / Vision -->
+  <g transform="translate(960, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#5EB3F0" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#5EB3F0" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">VISION</text>
+  </g>
+
+  <!-- Rune 8: RAG / AI -->
+  <g transform="translate(1110, 35)">
+    <rect x="-22" y="-22" width="44" height="44" rx="3" transform="rotate(45)" fill="#1F0D2E" stroke="#FFC857" stroke-width="1.5" filter="url(#runeAura)"/>
+    <text x="0" y="5" fill="#FFC857" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="900" text-anchor="middle">RAG</text>
+  </g>
+</svg>

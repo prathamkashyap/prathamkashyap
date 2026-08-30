@@ -1,0 +1,77 @@
+<svg width="1200" height="60" viewBox="0 0 1200 60" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Crimson Moon Status HUD">
+  <defs>
+    <linearGradient id="topbarBg" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#07040C"/>
+      <stop offset="25%" stop-color="#140A1F"/>
+      <stop offset="50%" stop-color="#1A0D28"/>
+      <stop offset="75%" stop-color="#140A1F"/>
+      <stop offset="100%" stop-color="#07040C"/>
+    </linearGradient>
+    <linearGradient id="crimsonGlowLine" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#FF2D4A" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#FF2D4A" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FF8E9A" stop-opacity="1"/>
+      <stop offset="80%" stop-color="#FF2D4A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FF2D4A" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="laserGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="1200" height="60" fill="url(#topbarBg)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <path d="M0 15h1200M0 30h1200M0 45h1200" stroke="#26153B" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.4"/>
+  
+  <!-- Top & Bottom Laser Edge -->
+  <rect x="0" y="0" width="1200" height="2" fill="url(#crimsonGlowLine)"/>
+  <path d="M0 59h1200" stroke="#2A143F" stroke-width="1"/>
+  <path d="M280 59h640" stroke="#FF2D4A" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Left Emblem / Crest -->
+  <g transform="translate(20, 14)">
+    <polygon points="16,0 32,16 16,32 0,16" fill="#1B0E2A" stroke="#FF2D4A" stroke-width="1.5"/>
+    <circle cx="16" cy="16" r="6" fill="#FF2D4A" filter="url(#laserGlow)"/>
+    <text x="44" y="22" fill="#F8EEE9" font-family="'JetBrains Mono', 'SF Pro Display', monospace" font-size="14" font-weight="900" letter-spacing="3.5">CRIMSON</text>
+    <text x="136" y="22" fill="#FF2D4A" font-family="'JetBrains Mono', 'SF Pro Display', monospace" font-size="14" font-weight="900" letter-spacing="3.5">ARCHIVE</text>
+    <text x="232" y="22" fill="#8E7D9E" font-family="sans-serif" font-size="12" font-weight="700" letter-spacing="1">赤月機関</text>
+  </g>
+
+  <!-- Center Status Badges -->
+  <g transform="translate(430, 20)">
+    <!-- Overview Tab Active -->
+    <rect x="0" y="0" width="90" height="20" rx="3" fill="#FF2D4A" fill-opacity="0.15" stroke="#FF2D4A" stroke-width="1"/>
+    <text x="45" y="14" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="800" letter-spacing="2" text-anchor="middle">OVERVIEW</text>
+
+    <!-- Quest Log Tab -->
+    <text x="155" y="14" fill="#8E7D9E" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle">QUEST LOG</text>
+
+    <!-- Loadout Tab -->
+    <text x="260" y="14" fill="#8E7D9E" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle">LOADOUT</text>
+    
+    <!-- Codex Tab -->
+    <text x="355" y="14" fill="#8E7D9E" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="2" text-anchor="middle">CODEX</text>
+  </g>
+
+  <!-- Right Telemetry & Online Status -->
+  <g transform="translate(940, 16)">
+    <!-- Rank S Seal -->
+    <rect x="0" y="4" width="46" height="20" rx="2" fill="#1C1304" stroke="#FFC857" stroke-width="1"/>
+    <text x="23" y="18" fill="#FFC857" font-family="'JetBrains Mono', sans-serif" font-size="11" font-weight="900" text-anchor="middle">S-RANK</text>
+
+    <!-- Live Node Indicator -->
+    <circle cx="70" cy="14" r="4" fill="#4ADE80" filter="url(#laserGlow)"/>
+    <circle cx="70" cy="14" r="8" stroke="#4ADE80" stroke-width="0.8" opacity="0.4"/>
+    <text x="84" y="18" fill="#4ADE80" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="1.5">ONLINE</text>
+    <text x="150" y="18" fill="#8E7D9E" font-family="'JetBrains Mono', monospace" font-size="10" letter-spacing="1">VIT BHOPAL</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M4 10V4H10M1196 10V4H1190M4 50V56H10M1196 50V56H1190" stroke="#FF2D4A" stroke-width="1.5" opacity="0.7"/>
+</svg>

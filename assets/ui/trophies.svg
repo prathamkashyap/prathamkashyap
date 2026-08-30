@@ -1,0 +1,49 @@
+<svg width="1200" height="118" viewBox="0 0 1200 118" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="8+ Quests Cleared, 4 Codex Tomes, 400+ Trials Won, CodeVita Global Rank 3633">
+  <defs>
+    <linearGradient id="trophyBg" x1="0" y1="0" x2="0" y2="118">
+      <stop offset="0%" stop-color="#140921"/>
+      <stop offset="100%" stop-color="#0B0414"/>
+    </linearGradient>
+    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="118" rx="4" fill="url(#trophyBg)" stroke="#391C59" stroke-width="1.5"/>
+
+  <!-- Vertical Column Dividers -->
+  <line x1="300" y1="0" x2="300" y2="118" stroke="#2B1445" stroke-width="1.5"/>
+  <line x1="600" y1="0" x2="600" y2="118" stroke="#2B1445" stroke-width="1.5"/>
+  <line x1="900" y1="0" x2="900" y2="118" stroke="#2B1445" stroke-width="1.5"/>
+
+  <!-- Column 1: Quests Cleared -->
+  <g transform="translate(150, 0)">
+    <text x="0" y="38" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="2" text-anchor="middle">QUESTS CLEARED</text>
+    <text x="0" y="86" fill="#F8EEE9" font-family="'Impact', 'Arial Black', sans-serif" font-size="42" font-weight="900" text-anchor="middle">8+</text>
+  </g>
+
+  <!-- Column 2: Codex Tomes -->
+  <g transform="translate(450, 0)">
+    <text x="0" y="38" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="2" text-anchor="middle">CODEX TOMES</text>
+    <text x="0" y="86" fill="#F8EEE9" font-family="'Impact', 'Arial Black', sans-serif" font-size="42" font-weight="900" text-anchor="middle">4</text>
+  </g>
+
+  <!-- Column 3: Trials Won -->
+  <g transform="translate(750, 0)">
+    <text x="0" y="38" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="2" text-anchor="middle">TRIALS WON</text>
+    <text x="0" y="86" fill="#F8EEE9" font-family="'Impact', 'Arial Black', sans-serif" font-size="42" font-weight="900" text-anchor="middle">400+</text>
+  </g>
+
+  <!-- Column 4: CodeVita Rank -->
+  <g transform="translate(1050, 0)">
+    <text x="0" y="38" fill="#FFC857" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" letter-spacing="2" text-anchor="middle" filter="url(#goldGlow)">CODEVITA RANK</text>
+    <text x="0" y="86" fill="#FFC857" font-family="'Impact', 'Arial Black', sans-serif" font-size="42" font-weight="900" text-anchor="middle" filter="url(#goldGlow)">3,633</text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <path d="M4 12V4H12M1196 12V4H1188M4 106V114H12M1196 106V114H1188" stroke="#FF2D4A" stroke-width="1.5" opacity="0.6"/>
+</svg>

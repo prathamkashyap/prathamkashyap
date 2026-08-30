@@ -1,0 +1,15 @@
+<svg width="1200" height="78" viewBox="0 0 1200 78" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Field Notes - The Current Oath">
+  <defs>
+    <linearGradient id="hBg7" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#12081C"/>
+      <stop offset="30%" stop-color="#09040F"/>
+      <stop offset="100%" stop-color="#07040C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="78" fill="url(#hBg7)"/>
+  <path d="M0 16 L40 16 M0 24 L24 24 M0 32 L32 32" stroke="#FF2D4A" stroke-width="2" opacity="0.8"/>
+  <rect x="0" y="0" width="5" height="78" fill="#FF2D4A"/>
+  <text x="50" y="24" fill="#FF8E9A" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="800" letter-spacing="3.5">FIELD NOTES // 現地記録</text>
+  <text x="50" y="60" fill="#F8EEE9" font-family="'Impact', 'Arial Black', sans-serif" font-size="34" font-weight="900" letter-spacing="1">THE CURRENT </text>
+  <text x="290" y="60" fill="#FF2D4A" font-family="'Impact', 'Arial Black', sans-serif" font-size="34" font-weight="900" letter-spacing="1">OATH.</text>
+</svg>
