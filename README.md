@@ -26,35 +26,7 @@
 
 <img src="assets/ui/heading-record.svg" width="100%" alt="Character Record — Welcome to the archive" />
 
-<table>
-<tr>
-<td width="38%" valign="top" align="center">
-  <img src="assets/profile/crimson-moon-warrior.jpg" width="300" alt="Crimson Moon Warrior portrait" />
-  <br />
-  <img src="assets/ui/identity-plate.svg" width="360" alt="Player character: Pratham Kashyap, The Systems Forger" />
-  <br />
-  <img src="assets/profile/crimson-moon-samurai.jpg" width="168" alt="Crimson Moon Samurai in the Storm" />
-</td>
-<td valign="top">
-
-**Class** — AI Systems Engineer  
-**Specialization** — Backend APIs, production ML, computer vision  
-**Origin** — Computer Science undergraduate, AI & ML, VIT Bhopal  
-**Title** — The Crimson Moon Warrior
-
-I take raw problems, shape them into systems, and ship the result. Training a model in a notebook is usually the first 20%. The rest is engineering: type-safe APIs, unpredictable inputs, resilient schemas, and interfaces people can actually use.
-
-Favorite quests live in the space between a clever model and a product that holds up once the tutorial ends.
-
-<img src="assets/ui/active-effect.svg" width="100%" alt="Active buff: full dungeon sight — data, model, gate, world" />
-
-**Equipped runes**
-
-<img src="assets/ui/runes.svg" width="100%" alt="Equipped runes: Python, Java, TypeScript, C++, FastAPI, DB, Vision, RAG" />
-
-</td>
-</tr>
-</table>
+<img src="assets/profile/character-record.png" width="100%" alt="Character record — AI Systems Engineer profile, Crimson Moon Warrior" />
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
