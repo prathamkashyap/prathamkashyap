@@ -1,210 +1,221 @@
-<div align="center">
+# Pratham Kashyap
 
-<img src="assets/ui/topbar.svg" width="100%" alt="Crimson Archive — overview, quest log, loadout — online at VIT Bhopal" />
+**Software Engineer — Backend Systems & AI/ML Applications**
 
-<img src="assets/profile/banner-splash.png" width="100%" alt="The Crimson Moon Warrior — cyber samurai standing before a blood moon, katana drawn" />
+B.Tech CSE (AI & ML), VIT Bhopal · India · Graduating 2027
 
-<img src="assets/divider.svg" width="100%" alt="" />
+I build backend systems and AI/ML applications with an emphasis on correctness and
+reliability — concurrency control, caching, persistence, failure handling, and
+automated test coverage as first-class design concerns rather than afterthoughts.
 
-`Class: The Systems Forger` &nbsp;·&nbsp; `Guild: VIT Bhopal — AI & ML` &nbsp;·&nbsp; `8 Quests Cleared` &nbsp;·&nbsp; `Status: Open for New Quests`
+My recent work spans backend infrastructure, applied AI, and full-stack systems, with
+selected applications available as live demos. Each project is documented and backed by an
+explicit test suite with CI gates.
 
-<p>
-  <a href="https://prathamkashyap.vercel.app/">Portfolio</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/prathamkashyap">GitHub</a>
-  &nbsp;·&nbsp;
-  <a href="https://linkedin.com/in/prathamkashyap5">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:pkmail2005@gmail.com">Email</a>
-</p>
+---
 
-</div>
+## Engineering Focus
 
-<img src="assets/divider.svg" width="100%" alt="" />
+**AI Infrastructure** — Inference gateways, request deduplication, circuit breaking,
+provider failover, hybrid retrieval (BM25 + dense + RRF), token streaming
 
-<img src="assets/profile/crimson-awakening.gif" width="100%" alt="The Crimson Moon Warrior awakening under a blood moon" />
+**Backend Engineering** — Layered REST architecture, relational modelling, pessimistic
+locking, keyset pagination, OAuth2/OIDC, RBAC, schema migrations
 
-<img src="assets/ui/heading-record.svg" width="100%" alt="Character Record — Welcome to the archive" />
+**Testing & Quality** — Unit, integration, E2E and concurrency suites; coverage gates in
+CI; deterministic mocks and offline test harnesses
 
-<img src="assets/profile/character-record.png" width="100%" alt="Character record — AI Systems Engineer profile, Crimson Moon Warrior" />
+**Applied ML Systems** — Retrieval grounding, spaced-repetition scheduling, geospatial
+classification, evidence-tracked evaluation
 
-<img src="assets/divider.svg" width="100%" alt="" />
+**Algorithms** — C++20, DSA, multi-platform competitive programming
 
-<img src="assets/ui/heading-campaign.svg" width="100%" alt="Current campaign — what is being forged" />
+---
 
-- **AI Systems Lab** — `MAIN QUEST · S-RANK`  
-  Inference gateway with SingleFlight deduplication, circuit breakers, and hybrid BM25 + dense retrieval fused with Reciprocal Rank Fusion.
-- **Libris** — `SIDE QUEST · A-RANK`  
-  Enterprise-style library backend on Spring Boot: layered architecture, Google OAuth2/OIDC SSO, dual-theme frontend, CI-enforced coverage.
-- **AthenaeumAI** — `SIDE QUEST · B-RANK`  
-  RAG-grounded study platform that turns PDFs into quizzes and flashcards, with SM-2 spaced repetition driving the review queue.
-- **Iron path** — `SYSTEMS DESIGN`  
-  REST contracts, caching, indexing, and write-heavy consistency.
-- **Sight & voice** — `FIELD OPERATIONS`  
-  YOLOv8/11, SAM, OpenCV, Whisper — realtime inference with graceful degradation.
+## Featured Work
 
-<img src="assets/divider.svg" width="100%" alt="" />
+### [AI Systems Lab](https://github.com/prathamkashyap/ai-systems-lab) · `Python` `FastAPI`
 
-<img src="assets/ui/heading-loadout.svg" width="100%" alt="Loadout equipped" />
+A routed LLM inference gateway built as infrastructure rather than a notebook. Applies
+TTL+LRU caching, SingleFlight in-flight request deduplication, micro-batching, circuit
+breaking, and failover across Anthropic, OpenAI-compatible backends (Ollama, vLLM,
+DeepSeek, Groq), and a deterministic `MockProvider` so the entire test path runs offline
+with zero API keys.
 
-🟨 **LEGENDARY — AI Systems**  
-`Python` `FastAPI` `Redis-style caching` `RRF retrieval` `Prometheus`
+Hybrid retrieval fuses BM25 lexical search with dense vectors via Reciprocal Rank Fusion,
+backed by a RAG evaluation suite (context precision/recall, keyword coverage,
+faithfulness). Ships SSE token streaming, Prometheus metrics, and an interactive playground.
 
-🟪 **EPIC — Backend Forge**  
-`Java 21` `Spring Boot` `Node.js` `Express` `Flask`
+**Measured** — 200 concurrent duplicate prompts: 297.7 ms → 45.5 ms wall time via
+SingleFlight (99.5% deduplication, one provider call).
 
-🟦 **RARE — Vision Core**  
-`PyTorch` `TensorFlow` `OpenCV` `YOLOv8/11` `SAM` `Whisper`
+Runs locally with `uvicorn`; no public deployment.
 
-🟦 **RARE — Data Sense**  
-`PostgreSQL` `MySQL` `MongoDB` `Firebase` `Docker` `Linux` `Git`
+`40 tests` · `ruff` lint · `CI on Python 3.11/3.12` · `Docker` · `5 ADRs` · `MIT`
 
-**Languages** — `C++` `Python` `Java` `JavaScript` `TypeScript` `SQL`  
-**Web** — `React` `Vite` `FastAPI` `Spring Boot` `Node.js`  
-**Infrastructure** — `Docker` `Git` `Linux` `GitHub Actions`
+[Repository](https://github.com/prathamkashyap/ai-systems-lab) ·
+[Architecture](https://github.com/prathamkashyap/ai-systems-lab/blob/main/system-design/architecture.md)
 
-<img src="assets/divider.svg" width="100%" alt="" />
+---
 
-<img src="assets/ui/heading-quest.svg" width="100%" alt="Quest log — eight quests" />
+### [Libris](https://github.com/prathamkashyap/libris) · `Java 21` `Spring Boot 3.5`
 
-### <img src="assets/icons/icon-gateway.svg" width="22" alt="" /> &nbsp; [AI Systems Lab](https://github.com/prathamkashyap/ai-systems-lab)
-`MAIN QUEST` · `LEGENDARY`
+A library management platform built to production conventions. Layered REST
+(Controller → Service → Repository) on Spring Security 6.5 with session auth via BCrypt
+and opt-in Google OAuth2/OIDC, URL-pattern RBAC across Admin / Librarian / Student, and
+CSRF protection.
 
-*An inference gateway forged to survive the live server, not just the tutorial zone.*
+Persistence work includes Flyway-versioned migrations (V1–V5), pessimistic locking for
+borrow/return race protection, N+1 prevention via `EntityGraph`, cache eviction on
+mutation, SQL-level overdue filtering, and keyset pagination for large report queries.
 
-An engineering reference for AI infrastructure, built as a gateway rather than a notebook. TTL+LRU caching, SingleFlight deduplication, micro-batching, circuit breaking, and failover across Anthropic, OpenAI-compatible backends (Ollama, vLLM, DeepSeek, Groq), plus a deterministic MockProvider. Hybrid BM25 + dense-vector retrieval with Reciprocal Rank Fusion, a RAG evaluation suite, an interactive playground, Prometheus metrics, and 40 tests.
+OCI deployment configuration is prepared but no live instance is verified; earlier Railway
+and Render deployments have been retired.
 
-Benchmarked: 200 concurrent duplicate prompts drop from 297.7ms to 45.5ms wall time via SingleFlight — a 99.5% deduplication rate.
+`175 tests / 17 classes` · `JaCoCo ≥70% gate (90.3% last verified)` · `Spotless` ·
+`ArchUnit` · `9 concurrency tests` · `Docker (amd64 + arm64)` · `9 engineering docs` · `MIT`
 
-`Python` `FastAPI` `Caching` `RRF` `Prometheus` · [Repository](https://github.com/prathamkashyap/ai-systems-lab)
+[Repository](https://github.com/prathamkashyap/libris) ·
+[Deployment guide](https://github.com/prathamkashyap/libris/blob/main/docs/DEPLOYMENT.md)
 
-### <img src="assets/icons/icon-libris.svg" width="22" alt="" /> &nbsp; [Libris](https://github.com/prathamkashyap/libris)
-`SIDE QUEST` · `EPIC`
+---
 
-*A library guild's records vault, armored with the same layers a real fortress needs.*
+### [AthenaeumAI](https://github.com/prathamkashyap/AthenaeumAI) · `React` `Node.js` `MongoDB` `Redis`
 
-Enterprise-style library backend, built the way production systems are built. Spring Boot 3.5 layered REST (Controller → Service → Repository), MySQL, Flyway, Ember Dark / Verdigris Light frontend. BCrypt sessions plus opt-in Google OAuth2/OIDC, Admin / Librarian / Student RBAC, CSRF protection, JSON logging, Swagger/OpenAPI. 20 tests across 4 classes, JaCoCo ≥70%.
+A deployed adaptive-learning platform that ingests uploaded material and derives per-topic
+mastery, confidence, and exponentially decayed retention from recorded attempts.
 
-`Java 21` `Spring Boot` `MySQL` `Flyway` `Docker` · [Repository](https://github.com/prathamkashyap/libris) · [Live](https://libris-lms.up.railway.app)
+The distinction that matters: the LLM writes questions and explanations — it never computes
+mastery, confidence, decay, or review scheduling. Those are deterministic calculations over
+stored attempts. Quiz generation is synchronous and can take minutes; only indexing and
+attempt-sync are enqueued to BullMQ, and the API reports honestly when background work was
+not scheduled.
 
-### <img src="assets/icons/icon-node-graph.svg" width="22" alt="" /> &nbsp; [AthenaeumAI](https://github.com/prathamkashyap/AthenaeumAI)
-`SIDE QUEST` · `EPIC`
+The shipped retriever is a measured lexical baseline (`local-hash-v1`), documented as such —
+a full BM25 implementation exists for comparison but is not on the active path.
 
-*Turns a graveyard of forgotten PDFs into a study companion that remembers what you keep forgetting.*
+| Suite | Passed | Skipped |
+|-------|-------:|--------:|
+| Frontend (Vitest) | 374 | — |
+| Backend unit (Jest) | 942 | — |
+| Backend integration (Jest) | 101 | 13 |
+| Browser E2E (Playwright) | 26 | 2 |
 
-RAG-grounded study system: chunked PDF ingestion, semantic retrieval, Groq Llama 3.3 70B generation, SM-2 spaced repetition, exponential-decay retention. Redis/BullMQ jobs with typed enqueue errors and retry-safe validation. 118 unit tests, 21 integration tests, Playwright E2E, GitHub Actions CI.
+Skipped tests are gated behind opt-in flags requiring live infrastructure; they are
+reported rather than silently passing. `CI gates typecheck · lint · build` · `MIT`
 
-`React` `Node.js` `MongoDB` `Redis` `Groq` · [Repository](https://github.com/prathamkashyap/AthenaeumAI)
+**Live** — [athenaeumai.tech](https://athenaeumai.tech) ·
+[API health](https://api.athenaeumai.tech/api/v1/health) ·
+[Swagger](https://api.athenaeumai.tech/api-docs/)
 
-### <img src="assets/icons/icon-pulse.svg" width="22" alt="" /> &nbsp; [AI Smart Retail & Customer Intelligence](https://github.com/prathamkashyap/AI-Smart-Retail-Customer-Intelligence-Platform)
-`FIELD QUEST` · `RARE`
+[Repository](https://github.com/prathamkashyap/AthenaeumAI)
 
-*One watchtower over the whole shop floor — faces, shelves, reviews, and a chatbot that actually answers back.*
+---
 
-End-to-end retail intelligence behind one gateway: OpenCV face encodings (never raw images), MobileNetV2 product classification, TF-IDF + logistic regression review sentiment, hybrid rule + ML-intent chatbot. React + Vite dashboard, webcam capture, Chart.js analytics.
+### [Fact Knowledge Layer](https://github.com/prathamkashyap/fact-knowledge-layer) · `Python` `FastAPI` `SQLite`
 
-`OpenCV` `React` · [Repository](https://github.com/prathamkashyap/AI-Smart-Retail-Customer-Intelligence-Platform) · [Live](https://ai-smart-retail-customer-intelligence.vercel.app/)
+A deterministic pipeline for grounded cross-document fact extraction and epistemic
+reasoning, built for a VIT engineering internship assignment. Parses multi-page PDFs,
+extracts structured assertions, and links every fact to a document, page number, and
+verbatim source sentence before persisting it.
 
-### <img src="assets/icons/icon-map-grid.svg" width="22" alt="" /> &nbsp; [CiviQ](https://github.com/prathamkashyap/CiviQ)
-`FIELD QUEST` · `RARE`
+Cross-document fact pairs are classified as `CORROBORATES`, `RECONCILABLE`, `CONTRADICTS`,
+`UNCERTAIN`, or `UNRELATED` — a numeric difference is not automatically a contradiction
+when estimate vintage or reporting scope explains it. Runs fully offline through an
+`LLMProvider` abstraction with a deterministic mock.
 
-*Reads a city's complaints like a battle map, so the right crew gets sent to the right street.*
+Runs locally from a FastAPI server; no public deployment.
 
-Geospatial ML for civic-complaint triage. KNN spatial-density features, DBSCAN hotspots, XGBoost classifier, 5-fold CV on 1,600 synthetic + 5,469 NYC 311 records — **95.7% accuracy**. Spatial-density features alone lifted Decision Tree accuracy by 12.9 points. React/Firebase reporting with Leaflet hotspot maps.
+`300 tests` · `pytest` · `hand-verified gold sets (27 extraction / 30 relationship)` ·
+`precision 1.0000 · F1 0.9200 · relationship accuracy 30/30`
 
-`React` `Firebase` `XGBoost` · [Repository](https://github.com/prathamkashyap/CiviQ)
+[Repository](https://github.com/prathamkashyap/fact-knowledge-layer)
 
-### <img src="assets/icons/icon-waveform.svg" width="22" alt="" /> &nbsp; [Multimodal AI Assistant](https://github.com/prathamkashyap/Multimodal-AI-Assistant)
-`FIELD QUEST`
+---
 
-*An assistant that stays asleep until it sees a face — then listens.*
+## Additional Projects
 
-Face-gated voice assistant that triggers only on visual presence. OpenCV Haar-cascade gating, Whisper transcription, deterministic 5-category intent router with fallbacks.
+**[Civic Lens](https://github.com/prathamkashyap/civic-lens)** — Geospatial ML for civic
+complaint triage. KNN spatial-density features, DBSCAN hotspot detection, and XGBoost
+prioritisation, evaluated on 5,469 real NYC 311 records (95.7% with direct training; 65.3%
+zero-shot from synthetic data, quantifying cross-city domain shift). The repository
+documents that the main dataset is synthetic and that high direct-training accuracy should
+be read cautiously, since status-derived labels partially correlate with the target. React,
+TypeScript, Firebase, Leaflet.
+`React` `TypeScript` `Firebase` `Python` `XGBoost` · [Live](https://civic-lens-platform.vercel.app)
 
-`Python` `OpenCV` `Whisper` · [Repository](https://github.com/prathamkashyap/Multimodal-AI-Assistant)
+**[Evidence-Driven Dataset Intelligence](https://github.com/prathamkashyap/evidence-driven-dataset-intelligence)** —
+A research artifact, not a production system. Local-first dataset recommendation with a
+two-layer evidence ledger (observation states and cross-evidence resolution states kept
+distinct), bounded fingerprinting, hard compatibility gates, multi-objective ranking, and
+family-aware greedy diversification. Fixed seeds, no network egress during evaluation, and a
+measured 128 MiB / 20 s envelope. M0–M8 frozen milestones plus an exploratory N = 3 human pilot.
+`208 tests` · `M0–M8`
 
-### <img src="assets/icons/icon-voice-cart.svg" width="22" alt="" /> &nbsp; [Voice Command Shopping Assistant](https://github.com/prathamkashyap/voice-command-shopping-assistant)
-`FIELD QUEST`
+**[AI Smart Retail & Customer Intelligence](https://github.com/prathamkashyap/AI-Smart-Retail-Customer-Intelligence-Platform)** —
+Computer vision, NLP, and a hybrid chatbot behind one FastAPI gateway. OpenCV facial
+encodings stored instead of raw images (privacy by design), MobileNetV2 product
+classification, and TF-IDF + logistic-regression review sentiment.
+[Live dashboard](https://ai-smart-retail-customer-intelligence.vercel.app)
 
-*A shopping list summoned by voice alone, in four languages, with no server standing behind it.*
+---
 
-Browser-native voice shopping list — no backend, no login. Web Speech API parser for add / remove / quantity / brand / price, with history and seasonal suggestions. English, Hindi, Telugu, and Tamil, plus text fallback.
+## Skills
 
-`JavaScript` `Web Speech API` · [Repository](https://github.com/prathamkashyap/voice-command-shopping-assistant)
+**Languages** — C++20 · Python · Java 21 · TypeScript · JavaScript · SQL
 
-### <img src="assets/icons/icon-leaf.svg" width="22" alt="" /> &nbsp; [AgriTech — Plant Disease Detection](https://github.com/prathamkashyap/AgriTech-Plant-Disease-Detection)
-`FIELD QUEST`
+**Backend & Infrastructure** — Spring Boot · Spring Security · FastAPI · Node.js · Express ·
+REST API design · MySQL · MongoDB · Redis · BullMQ · Flyway · OAuth2/OIDC · RBAC ·
+Docker · GitHub Actions · Linux · Prometheus
 
-*Reads a leaf like a diagnosis chart — one model finds it, the other names what's wrong.*
+**AI / ML** — Retrieval pipelines (BM25, dense vectors, RRF) · RAG · LLM provider APIs
+(Anthropic, OpenAI-compatible, Groq) · scikit-learn · XGBoost · OpenCV · PyTorch ·
+SSE streaming · Spaced repetition · RAG evaluation
 
-SAM isolates leaf and stem; custom YOLOv11 detectors diagnose wheat, tomato, and cotton disease.
+**Testing & Quality** — pytest · JUnit / MockMvc · Jest · Vitest · Playwright · JaCoCo ·
+ArchUnit · concurrency testing · deterministic mock providers · coverage gating in CI
 
-`YOLOv11` `SAM` `TensorFlow Lite` · [Repository](https://github.com/prathamkashyap/AgriTech-Plant-Disease-Detection)
+---
 
-<img src="assets/divider.svg" width="100%" alt="" />
+## Algorithms & Competitive Programming
 
-<img src="assets/ui/heading-codex.svg" width="100%" alt="Research Codex — notes from the field" />
+**[competitive-programming](https://github.com/prathamkashyap/competitive-programming)** —
+396 Codeforces solutions organised by difficulty rating, plus 11 reusable templates (DSU,
+segment tree, Fenwick tree, sieve, modular arithmetic, graph traversal, prefix sums,
+sliding window) and algorithm notes. Compilation of every C++ file is validated in CI.
 
-- **GA-ET-IVCFS-ANFIS** — Neuro-fuzzy product ranking under high uncertainty, co-authored with faculty (`R² = 0.98`).
-- **Civic complaint prioritization** — Hybrid synthetic + NYC 311 evaluation for geospatial civic triage.
-- **Multimodal AI Assistant** — Solo-authored IEEE-style research on realtime vision–speech co-activation.
-- **Parkinson's biomarker mining** — Acoustic feature pipeline with optimized SVM (`F1: 0.935`, `ROC-AUC: 0.945`).
+Platform figures below are reproduced from that repository's
+[generated statistics](https://github.com/prathamkashyap/competitive-programming/blob/main/docs/generated/external-stats.md),
+which marks each value as API-verified (`live`) or captured from a profile screenshot
+(`snapshot`). Counts are per-platform and are not aggregated into a combined total.
 
-<img src="assets/divider.svg" width="100%" alt="" />
+| Platform | Solved | Standing | Source |
+|----------|--------|----------|--------|
+| [LeetCode](https://leetcode.com/u/prathamkashyap/) | **522** | 171 Easy · 279 Medium · 72 Hard · 87.8% acceptance | snapshot |
+| [CodeChef](https://www.codechef.com/users/prathamkashyap) | **631** | 922 rating · 1 Star · Diamond League · DSA 1067 | API-verified |
+| [Codeforces](https://codeforces.com/profile/prathamkashyap) | **376** | 815 (newbie) | API-verified |
+| [HackerRank](https://www.hackerrank.com/profile/prathamkashyap) | **356** | Problem Solving 6★ (#1,871) · SQL 5★ (#1) | API-verified |
+| [HackerEarth](https://www.hackerearth.com/@prathamkashyap/) | **178** | 4,370 points · 14 badges | API-verified |
+| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/prathamkashyap) | **98** | Coding score 424 · 28 POTDs | snapshot |
 
-<img src="assets/ui/heading-trophies.svg" width="100%" alt="Trophy Room — milestones unlocked" />
+---
 
-<img src="assets/ui/trophies.svg" width="100%" alt="8+ quests shipped, 4 research tracks, 400+ problems solved, CodeVita global rank 3633" />
+## Currently Exploring
 
-Checked against live profiles rather than an outdated recap.
+- Model Context Protocol (MCP) and autonomous coding-agent architecture
+- Streaming and partial LLM generation to cut end-to-end generation latency
+- Sentence-transformer embeddings and cross-encoder reranking as a measured upgrade
+  path over lexical retrieval
 
-⚔️ **[LeetCode](https://leetcode.com/u/prathamkashyap/)** — **400+** problems cleared (402 in C++ alone)  
-⚔️ **[Codeforces](https://codeforces.com/profile/prathamkashyap)** — Rank 815 (Newbie) · **288** cleared all-time  
-⚔️ **[CodeChef](https://codechef.com/users/prathamkashyap)** — 922 rating, 1-star Div 4 · DSA 1067 · Diamond League · **335** cleared  
-⚔️ **[HackerEarth](https://www.hackerearth.com/@prathamkashyap/)** — Top 2% in Basic Programming  
-⚔️ **[HackerRank](https://hackerrank.com/profile/prathamkashyap)** — Certified Developer
+---
 
-Full trial history: [competitive-programming](https://github.com/prathamkashyap/competitive-programming).
+## Contact
 
-**Seals**
-- **TCS CodeVita Season 13** — Global rank 3,633
-- **Oracle Certified Foundations Associate** — Agentic AI, Oracle University
-- **NPTEL (IIT Kharagpur)** — Cloud Computing (Elite + Silver, top 2%) and Introduction to IoT (Elite + Gold, top 5%)
+[![Email](https://img.shields.io/badge/Email-pkmail2005%40gmail.com-2F6BFF?style=flat-square&logo=gmail&logoColor=white)](mailto:pkmail2005@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-prathamkashyap-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/prathamkashyap5)
+[![GitHub](https://img.shields.io/badge/GitHub-prathamkashyap-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/prathamkashyap)
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<img src="assets/ui/heading-margins.svg" width="100%" alt="Field notes — active quest" />
-
-- <img src="assets/icons/icon-book.svg" width="18" alt="" /> &nbsp; **Currently reading:** *Designing Data-Intensive Applications* by Martin Kleppmann. Every page is a blueprint.
-- <img src="assets/icons/icon-orbit.svg" width="18" alt="" /> &nbsp; **Current rabbit hole:** Model Context Protocol (MCP) and autonomous coding-agent architecture. The next frontier.
-- <img src="assets/icons/icon-node-burst.svg" width="18" alt="" /> &nbsp; **Engineering bias:** End-to-end usable systems over isolated model demos.
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<img src="assets/ui/heading-telemetry.svg" width="100%" alt="Combat log — GitHub telemetry" />
-
-<div align="center">
-
-<img src="https://github-readme-stats-eight-sigma-62.vercel.app/api?username=prathamkashyap&show_icons=true&hide_border=true&count_private=true&rank_icon=github&bg_color=07040C&title_color=FF7A8A&icon_color=FF2D4A&text_color=F8EEE9" height="165" alt="GitHub stats" />
-<img src="https://github-readme-streak-stats-opal-eight-99.vercel.app/?user=prathamkashyap&background=07040C&hide_border=true&ring=FF2D4A&fire=FF7A8A&currStreakNum=F8EEE9&sideNums=F8EEE9&currStreakLabel=FF7A8A&sideLabels=8E7D9E" height="165" alt="GitHub streak" />
-
-</div>
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<img src="assets/ui/heading-signal.svg" width="100%" alt="Guild connections — send a signal" />
-
-- [Portfolio](https://prathamkashyap.vercel.app/) — the public chronicle
-- [GitHub](https://github.com/prathamkashyap) — the armory
-- [LinkedIn](https://linkedin.com/in/prathamkashyap5) — the guild hall
-- [Email](mailto:pkmail2005@gmail.com) — direct summons
-- [LeetCode](https://leetcode.com/u/prathamkashyap/) · [Codeforces](https://codeforces.com/profile/prathamkashyap) · [CodeChef](https://codechef.com/users/prathamkashyap) · [HackerRank](https://hackerrank.com/profile/prathamkashyap) · [HackerEarth](https://www.hackerearth.com/@prathamkashyap/) · [Kaggle](https://kaggle.com/prathamkashyap17)
-- Marks: [Holopin](https://holopin.io/@prathamkashyap)
-
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<div align="center">
-
-<img src="assets/ui/footer.svg" width="100%" alt="Crimson Archive — cleared in the field, not the tutorial — open for new quests" />
-
-</div>
+**Certifications & achievements** — TCS CodeVita Season 13 global rank 3,633 · Oracle
+Certified Foundations Associate in Agentic AI (2026) · NPTEL Introduction to IoT (Elite +
+Gold, top 5%, 90) · NPTEL Cloud Computing (Elite + Silver, top 2%, 88) · Applied Machine
+Learning in Python, University of Michigan (Coursera)
