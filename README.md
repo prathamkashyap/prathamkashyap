@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="assets/profile/banner.svg" width="100%" alt="Midnight Circuit banner — Pratham Kashyap, Software Engineer building backend systems and applied AI" />
+
+</div>
+
 # Pratham Kashyap
 
 **Software Engineer — Backend Systems & AI/ML Applications**
@@ -32,9 +38,11 @@ classification, evidence-tracked evaluation
 
 ---
 
+<img src="assets/profile/divider-circuit.svg" width="100%" alt="" />
+
 ## Featured Work
 
-### [AI Systems Lab](https://github.com/prathamkashyap/ai-systems-lab) · `Python` `FastAPI`
+### <img src="assets/profile/projects/ai-systems.svg" width="26" valign="middle" alt="" /> &nbsp;[AI Systems Lab](https://github.com/prathamkashyap/ai-systems-lab) · `Python` `FastAPI`
 
 A routed LLM inference gateway built as infrastructure rather than a notebook. Applies
 TTL+LRU caching, SingleFlight in-flight request deduplication, micro-batching, circuit
@@ -58,7 +66,7 @@ Runs locally with `uvicorn`; no public deployment.
 
 ---
 
-### [Libris](https://github.com/prathamkashyap/libris) · `Java 21` `Spring Boot 3.5`
+### <img src="assets/profile/projects/libris.svg" width="26" valign="middle" alt="" /> &nbsp;[Libris](https://github.com/prathamkashyap/libris) · `Java 21` `Spring Boot 3.5`
 
 A library management platform built to production conventions. Layered REST
 (Controller → Service → Repository) on Spring Security 6.5 with session auth via BCrypt
@@ -80,7 +88,7 @@ and Render deployments have been retired.
 
 ---
 
-### [AthenaeumAI](https://github.com/prathamkashyap/AthenaeumAI) · `React` `Node.js` `MongoDB` `Redis`
+### <img src="assets/profile/projects/athenaeum.svg" width="26" valign="middle" alt="" /> &nbsp;[AthenaeumAI](https://github.com/prathamkashyap/AthenaeumAI) · `React` `Node.js` `MongoDB` `Redis`
 
 A deployed adaptive-learning platform that ingests uploaded material and derives per-topic
 mastery, confidence, and exponentially decayed retention from recorded attempts.
@@ -112,7 +120,7 @@ reported rather than silently passing. `CI gates typecheck · lint · build` · 
 
 ---
 
-### [Fact Knowledge Layer](https://github.com/prathamkashyap/fact-knowledge-layer) · `Python` `FastAPI` `SQLite`
+### <img src="assets/profile/projects/fact-knowledge.svg" width="26" valign="middle" alt="" /> &nbsp;[Fact Knowledge Layer](https://github.com/prathamkashyap/fact-knowledge-layer) · `Python` `FastAPI` `SQLite`
 
 A deterministic pipeline for grounded cross-document fact extraction and epistemic
 reasoning, built for a VIT engineering internship assignment. Parses multi-page PDFs,
@@ -132,6 +140,8 @@ Runs locally from a FastAPI server; no public deployment.
 [Repository](https://github.com/prathamkashyap/fact-knowledge-layer)
 
 ---
+
+<img src="assets/profile/divider-network.svg" width="100%" alt="" />
 
 ## Additional Projects
 
@@ -179,26 +189,15 @@ ArchUnit · concurrency testing · deterministic mock providers · coverage gati
 
 ## Algorithms & Competitive Programming
 
-**[competitive-programming](https://github.com/prathamkashyap/competitive-programming)** —
-396 Codeforces solutions organised by difficulty rating, plus 11 reusable templates (DSU,
-segment tree, Fenwick tree, sieve, modular arithmetic, graph traversal, prefix sums,
-sliding window) and algorithm notes. Compilation of every C++ file is validated in CI.
-
-Platform figures below are reproduced from that repository's
-[generated statistics](https://github.com/prathamkashyap/competitive-programming/blob/main/docs/generated/external-stats.md),
-which marks each value as API-verified (`live`) or captured from a profile screenshot
-(`snapshot`). Counts are per-platform and are not aggregated into a combined total.
-
-| Platform | Solved | Standing | Source |
-|----------|--------|----------|--------|
-| [LeetCode](https://leetcode.com/u/prathamkashyap/) | **522** | 171 Easy · 279 Medium · 72 Hard · 87.8% acceptance | snapshot |
-| [CodeChef](https://www.codechef.com/users/prathamkashyap) | **631** | 922 rating · 1 Star · Diamond League · DSA 1067 | API-verified |
-| [Codeforces](https://codeforces.com/profile/prathamkashyap) | **376** | 815 (newbie) | API-verified |
-| [HackerRank](https://www.hackerrank.com/profile/prathamkashyap) | **356** | Problem Solving 6★ (#1,871) · SQL 5★ (#1) | API-verified |
-| [HackerEarth](https://www.hackerearth.com/@prathamkashyap/) | **178** | 4,370 points · 14 badges | API-verified |
-| [GeeksforGeeks](https://www.geeksforgeeks.org/profile/prathamkashyap) | **98** | Coding score 424 · 28 POTDs | snapshot |
+I regularly practise data structures and algorithms across competitive-programming
+platforms to sharpen problem-solving and algorithmic thinking. My solutions, reusable
+templates and notes are available in the
+[competitive-programming](https://github.com/prathamkashyap/competitive-programming)
+repository, where compilation of every C++ file is validated in CI.
 
 ---
+
+<img src="assets/profile/divider-terminal.svg" width="100%" alt="" />
 
 ## Currently Exploring
 

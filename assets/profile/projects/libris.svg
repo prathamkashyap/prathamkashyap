@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Left Page -->
+  <path d="M 15 8 L 15 24.5 L 8.5 26.5 L 8.5 10 Z" fill="#0B1020" stroke="#38BDF8" stroke-width="1.5" stroke-linejoin="round" />
+  <!-- Right Page -->
+  <path d="M 17 8 L 17 24.5 L 23.5 26.5 L 23.5 10 Z" fill="#0B1020" stroke="#818CF8" stroke-width="1.5" stroke-linejoin="round" />
+
+  <!-- Spine -->
+  <line x1="16" y1="7" x2="16" y2="25" stroke="#64748B" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Page Content Lines (Left) -->
+  <line x1="10.5" y1="13" x2="13.5" y2="12.4" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="10.5" y1="16.5" x2="13.5" y2="15.9" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="10.5" y1="20" x2="13.5" y2="19.4" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Page Content Lines (Right) -->
+  <line x1="18.5" y1="12.4" x2="21.5" y2="13" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="18.5" y1="15.9" x2="21.5" y2="16.5" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+  <line x1="18.5" y1="19.4" x2="21.5" y2="20" stroke="#334155" stroke-width="1.2" stroke-linecap="round" />
+
+  <!-- Bookmark Marker -->
+  <path d="M 16 3.5 L 19 5.5 L 16 7.5 L 13 5.5 Z" fill="#0B1020" stroke="#67E8F9" stroke-width="1.5" stroke-linejoin="round" />
+
+  <!-- Circulation Arrow (Return / Check-out Loop) -->
+  <path d="M 8 21 A 9 9 0 0 1 13 13.5" stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="2.5 2" />
+  <path d="M 11.2 13.2 L 13.6 13 L 13.2 15.4" stroke="#A78BFA" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>

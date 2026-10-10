@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 24" width="100%" height="24" fill="none">
+  <defs>
+    <!-- Rails use userSpaceOnUse: a horizontal &lt;line&gt; has a zero-height
+         bounding box, so the default objectBoundingBox units would degenerate. -->
+    <linearGradient id="circL" gradientUnits="userSpaceOnUse" x1="0" y1="12" x2="478" y2="12">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#67E8F9" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="circR" gradientUnits="userSpaceOnUse" x1="522" y1="12" x2="1000" y2="12">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="1" />
+      <stop offset="55%" stop-color="#818CF8" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="circGlow" gradientUnits="userSpaceOnUse" cx="500" cy="12" r="16">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#67E8F9" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Full-width rails -->
+  <line x1="0" y1="12" x2="478" y2="12" stroke="url(#circL)" stroke-width="1.3" stroke-linecap="round" />
+  <line x1="522" y1="12" x2="1000" y2="12" stroke="url(#circR)" stroke-width="1.3" stroke-linecap="round" />
+
+  <!-- Circuit branch traces -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 250 12 L 268 5 L 330 5 L 344 12" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.45" />
+    <circle cx="250" cy="12" r="1.6" fill="#38BDF8" />
+    <circle cx="300" cy="5" r="1.6" fill="#67E8F9" />
+
+    <path d="M 750 12 L 732 19 L 670 19 L 656 12" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.45" />
+    <circle cx="750" cy="12" r="1.6" fill="#A78BFA" />
+    <circle cx="700" cy="19" r="1.6" fill="#C084FC" />
+
+    <!-- Via pads bridging rail to core -->
+    <line x1="360" y1="12" x2="360" y2="12" stroke="#67E8F9" stroke-width="1" />
+    <circle cx="360" cy="12" r="1.4" fill="#0B1020" stroke="#67E8F9" stroke-width="1" />
+    <circle cx="640" cy="12" r="1.4" fill="#0B1020" stroke="#A78BFA" stroke-width="1" />
+  </g>
+
+  <!-- Central core -->
+  <circle cx="500" cy="12" r="16" fill="url(#circGlow)" />
+  <polygon points="500,3 511,12 500,21 489,12" fill="#0B1020" stroke="#67E8F9" stroke-width="1.5" />
+  <circle cx="500" cy="12" r="2.6" fill="#A78BFA" />
+</svg>

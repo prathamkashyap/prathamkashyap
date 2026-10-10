@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="35%" stop-color="#0B1020" />
+      <stop offset="70%" stop-color="#0E162E" />
+      <stop offset="100%" stop-color="#070B16" />
+    </linearGradient>
+
+    <!-- Ambient Glows -->
+    <radialGradient id="glowCyan" cx="78%" cy="48%" r="40%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.18" />
+      <stop offset="55%" stop-color="#0EA5E9" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowViolet" cx="88%" cy="65%" r="35%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.16" />
+      <stop offset="60%" stop-color="#818CF8" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowAccentLeft" cx="12%" cy="25%" r="30%">
+      <stop offset="0%" stop-color="#67E8F9" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Linear Accents -->
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.1" />
+      <stop offset="40%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#67E8F9" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="violetLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.1" />
+      <stop offset="60%" stop-color="#818CF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="1" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0B132B" stop-opacity="0.75" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.7" stroke-opacity="0.18" />
+      <circle cx="0" cy="0" r="1" fill="#475569" fill-opacity="0.3" />
+    </pattern>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="1500" height="360" rx="14" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5" />
+  
+  <!-- Subtle Grid Overlay -->
+  <rect width="1500" height="360" rx="14" fill="url(#grid)" />
+
+  <!-- Ambient Light Pools -->
+  <rect width="1500" height="360" fill="url(#glowCyan)" />
+  <rect width="1500" height="360" fill="url(#glowViolet)" />
+  <rect width="1500" height="360" fill="url(#glowAccentLeft)" />
+
+  <!-- Corner Tech Brackets -->
+  <path d="M 28 44 L 28 28 L 44 28" fill="none" stroke="#38BDF8" stroke-width="1.75" stroke-opacity="0.6" stroke-linecap="round" />
+  <path d="M 1472 44 L 1472 28 L 1456 28" fill="none" stroke="#38BDF8" stroke-width="1.75" stroke-opacity="0.6" stroke-linecap="round" />
+  <path d="M 28 316 L 28 332 L 44 332" fill="none" stroke="#818CF8" stroke-width="1.75" stroke-opacity="0.6" stroke-linecap="round" />
+  <path d="M 1472 316 L 1472 332 L 1456 332" fill="none" stroke="#818CF8" stroke-width="1.75" stroke-opacity="0.6" stroke-linecap="round" />
+
+  <!-- ================= CIRCUIT TRACES (MIDNIGHT CIRCUIT) ================= -->
+  <!-- Top Circuit Tracks -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Muted background bus lines -->
+    <path d="M 0 90 L 260 90 L 310 40 L 620 40" stroke="#1E293B" stroke-width="1.2" stroke-opacity="0.7" />
+    <path d="M 0 105 L 240 105 L 285 60 L 580 60" stroke="#1E293B" stroke-width="1" stroke-opacity="0.5" />
+    <path d="M 880 35 L 1050 35 L 1090 75 L 1500 75" stroke="#1E293B" stroke-width="1.2" stroke-opacity="0.6" />
+    <path d="M 940 50 L 1070 50 L 1105 85 L 1500 85" stroke="#1E293B" stroke-width="1" stroke-opacity="0.5" />
+
+    <!-- Active Electric Cyan Tracks -->
+    <path d="M 40 270 L 220 270 L 270 320 L 520 320" stroke="url(#cyanLine)" stroke-width="1.5" />
+    <circle cx="520" cy="320" r="2.5" fill="#67E8F9" />
+    <circle cx="520" cy="320" r="5" stroke="#67E8F9" stroke-width="1" stroke-opacity="0.4" />
+
+    <path d="M 320 270 L 410 270 L 440 300 L 610 300" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.7" />
+    <circle cx="610" cy="300" r="2" fill="#38BDF8" />
+
+    <!-- Active Violet Tracks -->
+    <path d="M 160 335 L 340 335 L 375 300 L 490 300" stroke="url(#violetLine)" stroke-width="1.2" stroke-opacity="0.8" />
+    <circle cx="490" cy="300" r="2" fill="#A78BFA" />
+
+    <!-- Right Side High-Density Circuitry -->
+    <path d="M 820 180 L 980 180 L 1020 140 L 1140 140" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.6" />
+    <path d="M 1140 140 L 1220 140 L 1250 170 L 1360 170" stroke="url(#cyanLine)" stroke-width="1.8" />
+    <circle cx="1360" cy="170" r="3" fill="#67E8F9" />
+    <circle cx="1360" cy="170" r="7" stroke="#67E8F9" stroke-width="1" stroke-opacity="0.35" />
+
+    <path d="M 870 230 L 1010 230 L 1050 270 L 1260 270" stroke="url(#violetLine)" stroke-width="1.6" />
+    <circle cx="1260" cy="270" r="3" fill="#A78BFA" />
+    <circle cx="1260" cy="270" r="7" stroke="#A78BFA" stroke-width="1" stroke-opacity="0.35" />
+
+    <path d="M 1050 270 L 1110 330 L 1380 330" stroke="#818CF8" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="1380" cy="330" r="2" fill="#818CF8" />
+
+    <!-- Vertical Circuit Drop Connectors -->
+    <path d="M 1090 75 L 1090 125 L 1110 145" stroke="#334155" stroke-width="1" stroke-opacity="0.6" />
+    <path d="M 1250 170 L 1250 220 L 1270 240" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.5" />
+    <circle cx="1090" cy="75" r="2" fill="#38BDF8" />
+  </g>
+
+  <!-- ================= RIGHT SIDE: ABSTRACT ARCHITECTURE GRAPH ================= -->
+  <g transform="translate(1040, 60)">
+    <!-- Node System Backdrop Frame -->
+    <rect x="0" y="0" width="390" height="236" rx="10" fill="url(#cardGrad)" stroke="#1E293B" stroke-width="1.2" />
+    
+    <!-- Header of Mini Console -->
+    <rect x="0" y="0" width="390" height="28" rx="10" fill="#0B1329" />
+    <rect x="0" y="26" width="390" height="2" fill="#1E293B" />
+    <circle cx="16" cy="14" r="3.5" fill="#EF4444" fill-opacity="0.8" />
+    <circle cx="28" cy="14" r="3.5" fill="#F59E0B" fill-opacity="0.8" />
+    <circle cx="40" cy="14" r="3.5" fill="#10B981" fill-opacity="0.8" />
+    <text x="60" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#64748B" letter-spacing="1">TOPOLOGY // DISTRIBUTED_RUNTIME</text>
+    <text x="330" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#38BDF8" letter-spacing="0.5">● LIVE</text>
+
+    <!-- Graph Edges / Bus Lines -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Cross Links -->
+      <line x1="75" y1="95" x2="195" y2="75" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.7" stroke-dasharray="3 3" />
+      <line x1="75" y1="95" x2="195" y2="155" stroke="#67E8F9" stroke-width="1.2" stroke-opacity="0.5" />
+      <line x1="195" y1="75" x2="315" y2="115" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0.8" />
+      <line x1="195" y1="155" x2="315" y2="115" stroke="#A78BFA" stroke-width="1.5" stroke-opacity="0.8" />
+      <line x1="195" y1="75" x2="195" y2="155" stroke="#334155" stroke-width="1.2" />
+      
+      <!-- Feedback bus -->
+      <path d="M 315 115 L 345 115 L 345 200 L 75 200 L 75 125" stroke="#0284C7" stroke-width="1.2" stroke-opacity="0.4" stroke-dasharray="4 4" />
+    </g>
+
+    <!-- Node 1: Ingress Gateway (Left) -->
+    <g transform="translate(75, 95)">
+      <circle cx="0" cy="0" r="22" fill="#0B132B" stroke="#0284C7" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="16" fill="#070B16" stroke="#38BDF8" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="4" fill="#67E8F9" />
+      <text x="0" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#94A3B8" text-anchor="middle" font-weight="600">GATEWAY</text>
+      <text x="0" y="45" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#67E8F9" text-anchor="middle">SingleFlight</text>
+    </g>
+
+    <!-- Node 2: Core Service / Router (Center Top) -->
+    <g transform="translate(195, 75)">
+      <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0B132B" stroke="#818CF8" stroke-width="1.5" />
+      <rect x="-12" y="-12" width="24" height="24" rx="5" fill="#070B16" stroke="#A78BFA" stroke-width="1" />
+      <!-- Server icon bars -->
+      <line x1="-6" y1="-4" x2="6" y2="-4" stroke="#67E8F9" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#A78BFA" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="-6" y1="4" x2="3" y2="4" stroke="#67E8F9" stroke-width="1.5" stroke-linecap="round" />
+      <text x="0" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#94A3B8" text-anchor="middle" font-weight="600">INFERENCE</text>
+      <text x="0" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#A78BFA" text-anchor="middle">Failover+TTL</text>
+    </g>
+
+    <!-- Node 3: Storage & Cache (Center Bottom) -->
+    <g transform="translate(195, 155)">
+      <rect x="-18" y="-18" width="36" height="36" rx="8" fill="#0B132B" stroke="#0284C7" stroke-width="1.5" />
+      <rect x="-12" y="-12" width="24" height="24" rx="5" fill="#070B16" stroke="#38BDF8" stroke-width="1" />
+      <!-- Database cylinder icon -->
+      <ellipse cx="0" cy="-4" rx="6" ry="2.5" fill="none" stroke="#67E8F9" stroke-width="1.2" />
+      <path d="M -6 -4 L -6 4 A 6 2.5 0 0 0 6 4 L 6 -4" fill="none" stroke="#67E8F9" stroke-width="1.2" />
+      <text x="0" y="29" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#94A3B8" text-anchor="middle" font-weight="600">PERSISTENCE</text>
+      <text x="0" y="40" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#38BDF8" text-anchor="middle">Flyway / ACID</text>
+    </g>
+
+    <!-- Node 4: Retrieval & Reasoning (Right) -->
+    <g transform="translate(315, 115)">
+      <circle cx="0" cy="0" r="24" fill="#0B132B" stroke="#A78BFA" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="18" fill="#070B16" stroke="#C084FC" stroke-width="1.2" />
+      <circle cx="0" cy="0" r="5" fill="#67E8F9" />
+      <circle cx="0" cy="0" r="9" fill="none" stroke="#A78BFA" stroke-width="1" stroke-dasharray="2 2" />
+      <text x="0" y="35" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9.5" fill="#94A3B8" text-anchor="middle" font-weight="600">RAG &amp; EVAL</text>
+      <text x="0" y="46" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="8" fill="#C084FC" text-anchor="middle">Dense+BM25</text>
+    </g>
+
+    <!-- Mini Metrics Bar at bottom of card -->
+    <g transform="translate(16, 215)">
+      <text x="0" y="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#64748B">p99: <tspan fill="#38BDF8">45.5ms</tspan></text>
+      <text x="90" y="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#64748B">DEDUP: <tspan fill="#67E8F9">99.5%</tspan></text>
+      <text x="185" y="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#64748B">TESTS: <tspan fill="#A78BFA">1.6K+ PASS</tspan></text>
+      <text x="295" y="10" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" fill="#64748B">CI: <tspan fill="#10B981">GATED</tspan></text>
+    </g>
+  </g>
+
+  <!-- ================= LEFT SIDE: PRIMARY TYPOGRAPHY & IDENTITY ================= -->
+  <!-- Terminal Prompt Badge -->
+  <g transform="translate(76, 52)">
+    <rect width="286" height="28" rx="6" fill="#111827" stroke="#1E293B" stroke-width="1" />
+    <circle cx="16" cy="14" r="4" fill="#38BDF8">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite" />
+    </circle>
+    <text x="28" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="600" fill="#67E8F9" letter-spacing="1.2">SYSTEM // KERNEL ONLINE</text>
+    <line x1="228" y1="6" x2="228" y2="22" stroke="#334155" stroke-width="1" />
+    <text x="240" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" fill="#64748B">v2027</text>
+  </g>
+
+  <!-- Name Heading -->
+  <g transform="translate(76, 134)">
+    <text font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="44" letter-spacing="2" fill="#F8FAFC">
+      PRATHAM <tspan fill="#67E8F9">KASHYAP</tspan>
+    </text>
+  </g>
+
+  <!-- Role Subtitle -->
+  <g transform="translate(76, 172)">
+    <text font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-weight="600" font-size="15" letter-spacing="2" fill="#A78BFA">
+      SOFTWARE ENGINEER <tspan fill="#475569">///</tspan> BACKEND SYSTEMS &amp; APPLIED AI
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <g transform="translate(76, 218)">
+    <text font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="18.5" fill="#94A3B8" letter-spacing="0.2">
+      Building reliable systems. Applying AI to real problems.
+    </text>
+  </g>
+
+  <!-- Engineering Capability Chips -->
+  <g transform="translate(76, 262)">
+    <!-- Chip 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="30" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <circle cx="14" cy="15" r="3" fill="#38BDF8" />
+      <text x="26" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E2E8F0" font-weight="500">Inference Gateways</text>
+    </g>
+
+    <!-- Chip 2 -->
+    <g transform="translate(178, 0)">
+      <rect width="186" height="30" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <circle cx="14" cy="15" r="3" fill="#818CF8" />
+      <text x="26" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E2E8F0" font-weight="500">Production Backends</text>
+    </g>
+
+    <!-- Chip 3 -->
+    <g transform="translate(374, 0)">
+      <rect width="168" height="30" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <circle cx="14" cy="15" r="3" fill="#67E8F9" />
+      <text x="26" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E2E8F0" font-weight="500">Hybrid Retrieval</text>
+    </g>
+
+    <!-- Chip 4 -->
+    <g transform="translate(552, 0)">
+      <rect width="188" height="30" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <circle cx="14" cy="15" r="3" fill="#A78BFA" />
+      <text x="26" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E2E8F0" font-weight="500">1,600+ Tests &amp; CI</text>
+    </g>
+
+    <!-- Chip 5 -->
+    <g transform="translate(750, 0)">
+      <rect width="134" height="30" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
+      <circle cx="14" cy="15" r="3" fill="#38BDF8" />
+      <text x="26" y="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E2E8F0" font-weight="500">C++20 / DSA</text>
+    </g>
+  </g>
+</svg>
