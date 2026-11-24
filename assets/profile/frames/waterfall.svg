@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="100%" fill="none">
+  <style>
+    #mirror:target { transform: scaleX(-1); transform-origin: center; transform-box: view-box; }
+  </style>
+  <defs>
+    <pattern id="cascade" width="100%" height="208" patternUnits="userSpaceOnUse"
+             viewBox="0 0 20 208" preserveAspectRatio="none">
+      <path fill="#15355e" d="M5 0h9l-1 22 3 17-2 27 1 22-3 29 1 30-3 14 3 24 1 23H5L4 187l1-19-2-21 3-31-1-24 2-26-2-22 1-23Z"/>
+      <path fill="#206aa9" d="M7 0h5l-1 26 3 14-2 26 1 27-3 25 1 29-3 17 3 21 1 23H7l-1-23 1-19-2-19 3-31-1-24 2-26-2-23 1-21Z"/>
+      <path fill="#47c5e9" d="M8 0h3l-1 25 2 17-2 24 1 26-3 32 1 23-2 16 3 22 1 23H8L7 185l1-21-2-17 1-27 2-28-1-24 2-27-2-20Z"/>
+      <path stroke="#d4f9ff" stroke-width="1.35" stroke-linecap="round"
+            d="m9 0 .5 18-.7 13 1 15-1.2 28M9 85l.5 10-2.7 28m1 11 .3 15-1.6 12M8 176l1.5 12 .5 20"/>
+      <path stroke="#72dded" stroke-linecap="round"
+            d="m3.6 15-.4 9 .4 12m12.7 19-.7 11 .2 9M3 113l-1 15m11.6 11 .3 8-1.6 12m2 24 .7 11"/>
+      <path fill="#d7faff" d="M10 42c2 .5 3.2 2.6 3.8 5.4.9-1.4 2.4-1.7 3.4-.5-2.2 0-2.1 2.7-4.2 3.3-2.4.6-3.3-2.5-4.3-3.9ZM7 151c-1.7 4-4.1 3.6-5.1 1.4-.3 2.8 1.2 4.2 3 4.3 2.1 0 3.6-2 4.8-3.2Z"/>
+      <path fill="#62cfe8" d="m17 31 1.3-4.4.5 5.1-1.4 2.3Zm-14 53 1-4.4.5 4.8-1.3 2Zm13 43 1.3-3.5.2 4.1-1.3 1.1Zm-12 54 1-3 .6 3.6-1.2 1.4Z"/>
+    </pattern>
+  </defs>
+  <g id="mirror">
+    <rect width="100%" height="100%" fill="url(#cascade)"/>
+    <svg width="100%" height="54" viewBox="0 0 20 54" preserveAspectRatio="none">
+      <path fill="#1e5793" d="M0 1h20v8l-4 11-4 10-2 24-5-11 2-16L4 15 0 10Z"/>
+      <path fill="#57c9e6" d="M1 4h17l-1 9-5 10-2 24-2-15L9 20 5 14Z"/>
+      <path fill="#defcff" d="M0 4 3 1h11l6 3v4c-2.8-1.6-4.8-1-6 1.7-1.4-3.1-3.8-3.7-6.8-1.2C6.5 6.1 3.7 5.1 0 7Z"/>
+      <path d="M13.4 12 11 22l-.9 14m5.8-20-1.2 4" stroke="#b3f1fc" stroke-linecap="round"/>
+    </svg>
+    <svg y="100%" width="100%" height="54" viewBox="0 0 20 54" preserveAspectRatio="none" overflow="visible">
+      <path fill="#173f6a" d="M5-42c2 11-1 18 4 25s9 5 11 14l-4 3H3L0-5c6-4 3-13 4-20Z"/>
+      <path fill="#55c7e0" d="M7-36c3 12-2 15 3 23 2 3 7 1 8 8L15-1H4L2-5c5-4 4-11 4-20Z"/>
+      <path fill="#d6f8ff" d="M6-14c2 5 5 5 7 1 .2 3.8 2 4.7 5 4.2-.6 2.4-1.8 4-4 4.2-3.2.3-3.4-2.6-5.1-2.5-1.3 0-2.4 2.8-5.9 1l-.7-2.9c2 .4 3.3-1 3.7-5Z"/>
+      <path fill="#b3f1fc" d="m15.5-22 2-2 1.2 1.7-1.8 2.2Zm-13.6 1.7 1.1-1.7.8 2.5-1.2 1.4Zm13 2 1.3-1 .8 1.6-1.3 1.1Z"/>
+      <path d="M4-2h12" stroke="#8bdcfa" stroke-linecap="round"/>
+    </svg>
+  </g>
+</svg>

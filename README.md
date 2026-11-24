@@ -8,20 +8,22 @@
 
 <div>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg" width="11" height="768" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg" width="11" height="600" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg" width="11" height="552" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg" width="11" height="504" />
-    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/coastal-edge.svg" width="11" height="432" />
-    <img align="left" src="assets/profile/coastal-edge.svg" width="11" height="384" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="768" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="600" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="552" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="504" />
+    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="432" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="384" />
+    <img align="left" src="assets/profile/frames/shorebreak.svg" width="20" height="384" alt="" />
   </picture>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="768" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="600" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="552" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="504" />
-    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="432" />
-    <img align="right" src="assets/profile/coastal-edge.svg#shadow" width="11" height="384" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="768" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="600" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="552" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="504" />
+    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="432" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="384" />
+    <img align="right" src="assets/profile/frames/shorebreak.svg#mirror" width="20" height="384" alt="" />
   </picture>
 </div>
 
@@ -49,28 +51,30 @@ I build backend services and AI tools. I’m especially interested in what happe
 
 <div>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1848" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1512" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1392" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1296" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1152" />
-    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/coastal-edge.svg" width="11" height="984" />
-    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg" width="11" height="1032" />
-    <source media="(min-width: 960px) and (max-width: 1103px)" srcset="assets/profile/coastal-edge.svg" width="11" height="960" />
-    <source media="(min-width: 1104px) and (max-width: 1279px)" srcset="assets/profile/coastal-edge.svg" width="11" height="888" />
-    <img align="left" src="assets/profile/coastal-edge.svg" width="11" height="792" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1848" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1512" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1392" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1296" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1152" />
+    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="984" />
+    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="1032" />
+    <source media="(min-width: 960px) and (max-width: 1103px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="960" />
+    <source media="(min-width: 1104px) and (max-width: 1279px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="888" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/waterfall.svg" width="11" height="792" />
+    <img align="left" src="assets/profile/frames/waterfall.svg" width="20" height="816" alt="" />
   </picture>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1848" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1512" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1392" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1296" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1152" />
-    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="984" />
-    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="1032" />
-    <source media="(min-width: 960px) and (max-width: 1103px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="960" />
-    <source media="(min-width: 1104px) and (max-width: 1279px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="888" />
-    <img align="right" src="assets/profile/coastal-edge.svg#shadow" width="11" height="792" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1848" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1512" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1392" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1296" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1152" />
+    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="984" />
+    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="1032" />
+    <source media="(min-width: 960px) and (max-width: 1103px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="960" />
+    <source media="(min-width: 1104px) and (max-width: 1279px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="888" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/waterfall.svg#mirror" width="11" height="792" />
+    <img align="right" src="assets/profile/frames/waterfall.svg#mirror" width="20" height="816" alt="" />
   </picture>
 </div>
 
@@ -113,22 +117,24 @@ A local-first dataset recommender that checks metadata against evidence, filters
 
 <div>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg" width="11" height="408" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg" width="11" height="336" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg" width="11" height="312" />
-    <source media="(min-width: 416px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg" width="11" height="288" />
-    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/coastal-edge.svg" width="11" height="240" />
-    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg" width="11" height="264" />
-    <img align="left" src="assets/profile/coastal-edge.svg" width="11" height="216" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="408" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="336" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="312" />
+    <source media="(min-width: 416px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="288" />
+    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="240" />
+    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="264" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/tidepool.svg" width="11" height="216" />
+    <img align="left" src="assets/profile/frames/tidepool.svg" width="20" height="216" alt="" />
   </picture>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="408" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="336" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="312" />
-    <source media="(min-width: 416px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="288" />
-    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="240" />
-    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="264" />
-    <img align="right" src="assets/profile/coastal-edge.svg#shadow" width="11" height="216" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="408" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="336" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="312" />
+    <source media="(min-width: 416px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="288" />
+    <source media="(min-width: 576px) and (max-width: 767px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="240" />
+    <source media="(min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="264" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/tidepool.svg#mirror" width="11" height="216" />
+    <img align="right" src="assets/profile/frames/tidepool.svg#mirror" width="20" height="216" alt="" />
   </picture>
 </div>
 
@@ -149,24 +155,26 @@ A local-first dataset recommender that checks metadata against evidence, filters
 
 <div>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg" width="11" height="528" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg" width="11" height="432" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg" width="11" height="384" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg" width="11" height="360" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg" width="11" height="312" />
-    <source media="(min-width: 576px) and (max-width: 767px), (min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg" width="11" height="264" />
-    <source media="(min-width: 960px) and (max-width: 1279px)" srcset="assets/profile/coastal-edge.svg" width="11" height="216" />
-    <img align="left" src="assets/profile/coastal-edge.svg" width="11" height="192" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="528" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="432" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="384" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="360" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="312" />
+    <source media="(min-width: 576px) and (max-width: 767px), (min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="264" />
+    <source media="(min-width: 960px) and (max-width: 1279px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="216" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/whirlpool.svg" width="11" height="192" />
+    <img align="left" src="assets/profile/frames/whirlpool.svg" width="20" height="192" alt="" />
   </picture>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="528" />
-    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="432" />
-    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="384" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="360" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="312" />
-    <source media="(min-width: 576px) and (max-width: 767px), (min-width: 832px) and (max-width: 959px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="264" />
-    <source media="(min-width: 960px) and (max-width: 1279px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="216" />
-    <img align="right" src="assets/profile/coastal-edge.svg#shadow" width="11" height="192" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="528" />
+    <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="432" />
+    <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="384" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="360" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="312" />
+    <source media="(min-width: 576px) and (max-width: 767px), (min-width: 832px) and (max-width: 959px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="264" />
+    <source media="(min-width: 960px) and (max-width: 1279px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="216" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/whirlpool.svg#mirror" width="11" height="192" />
+    <img align="right" src="assets/profile/frames/whirlpool.svg#mirror" width="20" height="192" alt="" />
   </picture>
 </div>
 
@@ -183,18 +191,20 @@ A local-first dataset recommender that checks metadata against evidence, filters
 
 <div>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg" width="11" height="360" />
-    <source media="(min-width: 352px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg" width="11" height="288" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg" width="11" height="240" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg" width="11" height="192" />
-    <img align="left" src="assets/profile/coastal-edge.svg" width="11" height="168" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/rapids.svg" width="11" height="360" />
+    <source media="(min-width: 352px) and (max-width: 415px)" srcset="assets/profile/frames/rapids.svg" width="11" height="288" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/rapids.svg" width="11" height="240" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/rapids.svg" width="11" height="192" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/rapids.svg" width="11" height="168" />
+    <img align="left" src="assets/profile/frames/rapids.svg" width="20" height="168" alt="" />
   </picture>
   <picture>
-    <source media="(max-width: 351px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="360" />
-    <source media="(min-width: 352px) and (max-width: 415px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="288" />
-    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="240" />
-    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/coastal-edge.svg#shadow" width="11" height="192" />
-    <img align="right" src="assets/profile/coastal-edge.svg#shadow" width="11" height="168" alt="" />
+    <source media="(max-width: 351px)" srcset="assets/profile/frames/rapids.svg#mirror" width="11" height="360" />
+    <source media="(min-width: 352px) and (max-width: 415px)" srcset="assets/profile/frames/rapids.svg#mirror" width="11" height="288" />
+    <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/rapids.svg#mirror" width="11" height="240" />
+    <source media="(min-width: 480px) and (max-width: 575px), (min-width: 768px) and (max-width: 831px)" srcset="assets/profile/frames/rapids.svg#mirror" width="11" height="192" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/rapids.svg#mirror" width="11" height="168" />
+    <img align="right" src="assets/profile/frames/rapids.svg#mirror" width="20" height="168" alt="" />
   </picture>
 </div>
 

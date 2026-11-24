@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="100%" fill="none">
+  <style>
+    #mirror:target { transform: scaleX(-1); transform-origin: center; transform-box: view-box; }
+  </style>
+  <defs>
+    <pattern id="surf" width="100%" height="184" patternUnits="userSpaceOnUse"
+             viewBox="0 0 20 184" preserveAspectRatio="none">
+      <path fill="#183b6b" d="M5 0h6c1 20-5 37-3 57 2 19 11 22 10 42-1 12-6 16-11 19 3-7 2-15 2-20-3 16-3 28-1 44s4 29 3 42H5c0-17-3-30-4-42-2-25 4-42 5-60C7 62 0 50 2 27 3 15 5 7 5 0Z"/>
+      <path fill="#2384bf" d="M6 0h4C10 25 4 39 6 58c2 19 11 25 10 41 0 7-2 11-6 15 2-8.5 1-15-1-21-1.9 26-5 28-3 50 1 11 4 25 4 41H6c0-15-3.1-26-4.4-41C-.5 120 6 102 7 84 8 64 2 48 3.5 32 5 16 6 8 6 0Z"/>
+      <path fill="#44c6e1" d="M6 .5h2C8 23 3 37 5 56c2 17 10 26 10 41 0 5-1 9-4 13 2-8 1-14-2.5-22-2 24-6 38-4 53 1 15 4 29 3.5 43H6c.3-16-3-28-4-44-2-21 5-38 5.1-58C7 68 2.5 51 3 38 4 20 6 9 6 .5Z"/>
+      <path fill="#caf7f3" d="M8 75c6 6 11 13 10 22-.5-1.4-1.2-2.3-2.2-1.8 1 4.3.1 7.3-3 10.2 1-3.8.5-6.7-1.5-8.5-.1 3.1-1.2 5.8-3.6 7.2 2.1-5.4 2-13.5-.2-18.4Z"/>
+      <path d="M6.9 0C7 14 4.4 28 4.3 42s1.4 22 3 30M4.8 111Q.7 126 2.8 141c.7 10 3.5 25 3.9 39"
+            stroke="#a0e8ec" stroke-width="1" stroke-linecap="round"/>
+      <path fill="#68dced" d="m15 76 3-1.8-.5 2.4-1.8 1Zm3 7 1.6-.6-.3 2.3-1.4-.3ZM1 156l1.5 2.4-.2 2.2L1 159Z"/>
+      <path d="m11.6 24 1.1-4m.4 122 1.9 4" stroke="#ecb182" stroke-width="1.05" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+  <rect id="mirror" width="100%" height="100%" fill="url(#surf)"/>
+</svg>
