@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 50" fill="none">
+  <defs>
+    <linearGradient id="spillway" x2="1" y2=".65">
+      <stop stop-color="#1a8dc9"/>
+      <stop offset=".46" stop-color="#183e79"/>
+      <stop offset="1" stop-color="#157cb0"/>
+    </linearGradient>
+    <linearGradient id="light" x2="1">
+      <stop stop-color="#63def1" stop-opacity=".35"/>
+      <stop offset=".28" stop-color="#b3f9ff"/>
+      <stop offset=".66" stop-color="#78ddf8"/>
+      <stop offset="1" stop-color="#b5f8ff"/>
+    </linearGradient>
+  </defs>
+  <!-- The lip and staggered sheets of spray carry the cut from edge to edge. -->
+  <path fill="#112840" d="M0 8h90l16 5h154l18-6h123l14 4h130l15 4h140l15-5h95l24 4h66v11h-65l-26-4h-92l-15 5H559l-16-4H418l-19-4H282l-17 6H105l-17-5H0Z"/>
+  <path fill="url(#spillway)" d="M0 12h88l18 5h154l18-6h122l17 4h128l15 4h142l14-5h96l24 4h64v9h-67l-24-4h-91l-16 5H556l-14-4H415l-17-4H281l-17 6H105l-18-5H0Z"/>
+  <path d="M0 12h88l18 5h154l18-6h122l17 4h128l15 4h142l14-5h96l24 4h64"
+        stroke="url(#light)" stroke-width="2"/>
+  <path d="m13 19-6 13m18-12-6 12m31-11-6 15m11-14-4 9m46-10-5 14m35-11-6 17m13-16-4 11m25-11-4 12m30-11-6 16m15-17-3 10m36-10-7 19m18-19-4 12m41-13-5 17m20-18-6 12m26-11-6 16m13-16-4 11m38-11-7 17m18-17-5 11m29-10-4 15m22-15-5 12m33-9-6 17m17-17-5 9m32-9-7 18m16-18-4 10m32-10-5 16m30-14-7 18m17-18-4 10m36-8-6 17m15-16-4 10m34-10-6 16m15-16-4 11m42-11-7 19m17-19-4 11m35-13-6 17m19-17-4 10m23-10-6 15m33-15-5 11m13-11-6 17m32-17-5 13m30-11-6 16m20-16-4 11m33-11-6 15m20-15-5 12"
+        stroke="#5cbbec" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M0 37c30-3 67-2 95 1s49 5 91 4m64-3c39-2 51-9 79-9 34 0 52 5 76 7m42 4c27 1 55 0 86-3s49 1 65 2m58 3c29-3 48-12 80-10 44 2 88 8 164 5"
+        stroke="#9aeaf9" stroke-opacity=".64" stroke-width="2" stroke-linecap="round"/>
+</svg>

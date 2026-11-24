@@ -47,7 +47,7 @@ I build backend services and AI tools. I’m especially interested in what happe
 </td></tr></tbody>
 <tbody><tr><td width="900">
 
-<p align="center"><picture><img src="assets/profile/divider-surf.svg" width="100%" alt="" /></picture></p>
+<p align="center"><picture><img src="assets/profile/dividers/cascade.svg" width="100%" alt="" /></picture></p>
 
 <div>
   <picture>
@@ -113,7 +113,7 @@ A local-first dataset recommender that checks metadata against evidence, filters
 </td></tr></tbody>
 <tbody><tr><td width="900">
 
-<p align="center"><picture><img src="assets/profile/divider-surf.svg" width="100%" alt="" /></picture></p>
+<p align="center"><picture><img src="assets/profile/dividers/tideglass.svg" width="100%" alt="" /></picture></p>
 
 <div>
   <picture>
@@ -151,7 +151,7 @@ A local-first dataset recommender that checks metadata against evidence, filters
 </td></tr></tbody>
 <tbody><tr><td width="900">
 
-<p align="center"><picture><img src="assets/profile/divider-surf.svg" width="100%" alt="" /></picture></p>
+<p align="center"><picture><img src="assets/profile/dividers/moonlight.svg" width="100%" alt="" /></picture></p>
 
 <div>
   <picture>
@@ -187,7 +187,7 @@ A local-first dataset recommender that checks metadata against evidence, filters
 </td></tr></tbody>
 <tbody><tr><td width="900">
 
-<p align="center"><picture><img src="assets/profile/divider-surf.svg" width="100%" alt="" /></picture></p>
+<p align="center"><picture><img src="assets/profile/dividers/whitewater.svg" width="100%" alt="" /></picture></p>
 
 <div>
   <picture>
