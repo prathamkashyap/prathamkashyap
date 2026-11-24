@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 482 66" width="482" height="66" role="img" aria-labelledby="name">
+  <title id="name">Pratham Kashyap</title>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .lettering { animation: land .65s cubic-bezier(.16,.75,.3,1) both; }
+      .underline { animation: draw .7s .12s ease-out both; transform-origin: 7% 85%; }
+      @keyframes land {
+        from { opacity: .45; transform: translate(4px,-1.5px); }
+        to { opacity: 1; transform: translate(0,0); }
+      }
+      @keyframes draw { from { transform: scaleX(.15); } to { transform: scaleX(1); } }
+    }
+  </style>
+  <defs>
+    <!-- Original forward-raked capitals, with chamfered terminals and open counters. -->
+    <path id="p" d="M0 32V0h20l5 5v10l-5 5H7v12zm7-19h9l2-2V8l-2-2H7z"/>
+    <path id="r" d="M0 32V0h20l5 5v9l-5 5h-1l7 13h-8L11 20H7v12zm7-19h9l2-2V8l-2-2H7z"/>
+    <path id="a" d="M0 32 9 0h12l7 32h-8l-1.5-7h-9L7 32zm11-13h6L14.8 6z"/>
+    <path id="t" d="M0 0h28l-2 7h-8.5v25h-8V7H0z"/>
+    <path id="h" d="M0 0h8v12h11V0h8v32h-8V19H8v13H0z"/>
+    <path id="m" d="M0 32V0h8l8 13.5L24 0h8v32h-8V13l-8 13-8-13v19z"/>
+    <path id="k" d="M0 0h8v13L19 0h9L15 16l13 16h-9L8 19v13H0z"/>
+    <path id="s" d="M26 0l-2 7H10L8 9v2l2 2h10l5 5v8l-6 6H0l2-7h13l2-2v-2l-2-2H6l-6-5V6l6-6z"/>
+    <path id="y" d="M0 0h9l6 11 7-11h9L18 19v13h-8V19z"/>
+    <g id="signature" fill-rule="evenodd" transform="translate(29 12) skewX(-12)">
+      <use xlink:href="#p"/><use xlink:href="#r" x="29"/><use xlink:href="#a" x="58"/>
+      <use xlink:href="#t" x="89"/><use xlink:href="#h" x="120"/><use xlink:href="#a" x="151"/>
+      <use xlink:href="#m" x="182"/>
+      <use xlink:href="#k" x="230"/><use xlink:href="#a" x="261"/><use xlink:href="#s" x="292"/>
+      <use xlink:href="#h" x="322"/><use xlink:href="#y" x="352"/><use xlink:href="#a" x="384"/>
+      <use xlink:href="#p" x="415"/>
+    </g>
+  </defs>
+  <g class="lettering" stroke-linejoin="round">
+    <use xlink:href="#signature" fill="#17809c" stroke="#112e49" stroke-width="2.8" transform="translate(-1.6 3.4)"/>
+    <use xlink:href="#signature" fill="#f7f4e9" stroke="#12304c" stroke-width="1.7" paint-order="stroke"/>
+  </g>
+  <g class="underline">
+    <path fill="#248aa6" d="M18 53c71 2 123-4 176-3 19 .2 36 1.5 51 4-20-1.5-36-1.8-56-1.4C122 55 71 59 18 55Z"/>
+    <path fill="#eda463" d="m249 53 21 1.8-8.5 1.1-13.5-2.2z"/>
+  </g>
+</svg>
