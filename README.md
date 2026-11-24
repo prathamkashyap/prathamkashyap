@@ -12,22 +12,22 @@
     <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="600" />
     <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="552" />
     <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="504" />
-    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="432" />
-    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="384" />
-    <img align="left" src="assets/profile/frames/shorebreak.svg" width="20" height="384" alt="" />
+    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="448" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg" width="11" height="416" />
+    <img align="left" src="assets/profile/frames/shorebreak.svg" width="20" height="416" alt="" />
   </picture>
   <picture>
     <source media="(max-width: 351px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="768" />
     <source media="(min-width: 352px) and (max-width: 383px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="600" />
     <source media="(min-width: 384px) and (max-width: 415px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="552" />
     <source media="(min-width: 416px) and (max-width: 479px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="504" />
-    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="432" />
-    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="384" />
-    <img align="right" src="assets/profile/frames/shorebreak.svg#mirror" width="20" height="384" alt="" />
+    <source media="(min-width: 480px) and (max-width: 1103px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="448" />
+    <source media="(max-width: 1279px)" srcset="assets/profile/frames/shorebreak.svg#mirror" width="11" height="416" />
+    <img align="right" src="assets/profile/frames/shorebreak.svg#mirror" width="20" height="416" alt="" />
   </picture>
 </div>
 
-<h1 align="center"><picture><img src="assets/profile/surf-title.svg" width="64%" alt="Pratham Kashyap" /></picture></h1>
+<h1 align="center"><picture><img src="assets/profile/surf-title.svg" width="70%" alt="Pratham Kashyap" /></picture></h1>
 
 <p align="center"><strong>Backend engineering &amp; applied AI</strong><br />
 B.Tech CSE (AI &amp; ML) · VIT Bhopal · 2027</p>
