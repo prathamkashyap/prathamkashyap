@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="100%" fill="none">
+  <style>
+    #shadow:target { transform: scaleX(-1); transform-origin: center; transform-box: view-box; }
+    #shadow:target .undertow { opacity: .7; }
+  </style>
+  <defs>
+    <!-- Draw at the displayed pixel size so each glint stays round along a tall margin. -->
+    <pattern id="tide" width="11" height="136" patternUnits="userSpaceOnUse">
+      <path d="M3 0c.2 16 6 25 4 39S.6 62 2.7 78s5.4 28 3.3 40L3 136"
+            stroke="#234a78" stroke-width="4.5"/>
+      <path d="M2.1 0c.2 16 6 25 4 39S-.3 62 1.8 78s5.4 28 3.3 40l-3 18"
+            stroke="#31bad1" stroke-width="1.8"/>
+      <path d="M3 7c1 6 2.3 10 3.4 15M3.3 49l-1.5 7M4.2 89q1.3 6 2 12"
+            stroke="#abece9" stroke-linecap="round" stroke-width="1.1"/>
+      <path d="m7 45 2-.8m-7 36 2.5-.6m1.8 40 2.6-1.2" stroke="#60abc8" stroke-linecap="round"/>
+      <ellipse cx="6.6" cy="69" rx="3.7" ry="1" fill="#183b61"/>
+      <circle cx="5" cy="66.3" r="3.2" fill="#f4b378"/>
+      <path d="M1.5 67.1h7.3m-6 2.2 4.3-.3" stroke="#216183" stroke-width=".9"/>
+    </pattern>
+    <linearGradient id="ends" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset=".065" stop-color="white"/>
+      <stop offset=".935" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="taper"><rect width="100%" height="100%" fill="url(#ends)"/></mask>
+  </defs>
+  <g id="shadow" mask="url(#taper)">
+    <rect class="undertow" x="7" width="1" height="100%" fill="#497f9e" opacity=".3"/>
+    <rect width="100%" height="100%" fill="url(#tide)"/>
+  </g>
+</svg>

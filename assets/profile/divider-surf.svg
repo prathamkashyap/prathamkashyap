@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 42" fill="none">
+  <defs>
+    <linearGradient id="rail" gradientUnits="userSpaceOnUse" x1="0" x2="1000">
+      <stop stop-color="#238fcb"/>
+      <stop offset=".28" stop-color="#4b9cce" stop-opacity=".38"/>
+      <stop offset=".5" stop-color="#22b6d1"/>
+      <stop offset=".72" stop-color="#4b9cce" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#238fcb"/>
+    </linearGradient>
+    <linearGradient id="crest" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#267acf"/>
+      <stop offset="1" stop-color="#57d6e7"/>
+    </linearGradient>
+    <radialGradient id="glint">
+      <stop stop-color="#8beaf6" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#8beaf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .glint { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .glint { animation: skim 2s ease-out 1; }
+      @keyframes skim {
+        0% { transform: translateX(0); opacity: 0; }
+        25%, 65% { opacity: .9; }
+        100% { transform: translateX(825px); opacity: 0; }
+      }
+    }
+  </style>
+  <path d="M3 7v28m994-28v28M3 21h52l9-8h109l8 8h283m72 0h283l8-8h109l9 8h52"
+        stroke="url(#rail)" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+  <path d="M14 13h27m-27 16h27m918-16h27m-27 16h27M198 25h219m166 0h219"
+        stroke="url(#rail)" stroke-width="1" stroke-opacity=".65" vector-effect="non-scaling-stroke"/>
+  <path d="M25 9l5-4m5 4l5-4m920 4l5-4m5 4l5-4"
+        stroke="#b6783e" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+  <path d="M471 25c12 2 19-3 26-11 5-6 13-7 19-3 3 2 5 5 5 9-4-4-9-5-12-2-4 3-1 7 4 8 5 2 10 0 17-3-8 8-16 11-24 8-6-2-8-7-6-11-6 8-16 12-29 5Z"
+        fill="url(#crest)"/>
+  <path d="M475 30c12 4 21 2 28-2m15-15 4 1m-3-4 4 1" stroke="#50bdd4" stroke-width="1.3" stroke-linecap="round"/>
+  <circle cx="528" cy="14" r="1.8" fill="#bd7e47"/>
+  <rect class="glint" x="39" y="18" width="90" height="6" rx="3" fill="url(#glint)"/>
+</svg>
